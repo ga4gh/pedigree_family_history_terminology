@@ -1,0 +1,349 @@
+Prefix(:=<http://ga4gh.org/ontologies/fh.owl>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(ga4gh:=<http://purl.org/ga4gh/rel.owl#>)
+
+
+Ontology(<http://purl.org/ga4gh/rel.owl>
+Annotation(rdfs:comment "A family relationships ontology."^^xsd:string)
+
+Declaration(Class(ga4gh:REL_993))
+Declaration(Class(ga4gh:REL_994))
+Declaration(Class(ga4gh:REL_995))
+Declaration(Class(ga4gh:REL_996))
+Declaration(Class(ga4gh:REL_997))
+Declaration(Class(ga4gh:REL_998))
+Declaration(Class(ga4gh:REL_999))
+Declaration(ObjectProperty(ga4gh:REL_001))
+Declaration(ObjectProperty(ga4gh:REL_002))
+Declaration(ObjectProperty(ga4gh:REL_003))
+Declaration(ObjectProperty(ga4gh:REL_004))
+Declaration(ObjectProperty(ga4gh:REL_005))
+Declaration(ObjectProperty(ga4gh:REL_006))
+Declaration(ObjectProperty(ga4gh:REL_007))
+Declaration(ObjectProperty(ga4gh:REL_008))
+Declaration(ObjectProperty(ga4gh:REL_009))
+Declaration(ObjectProperty(ga4gh:REL_010))
+Declaration(ObjectProperty(ga4gh:REL_011))
+Declaration(ObjectProperty(ga4gh:REL_012))
+Declaration(ObjectProperty(ga4gh:REL_013))
+Declaration(ObjectProperty(ga4gh:REL_014))
+Declaration(ObjectProperty(ga4gh:REL_015))
+Declaration(ObjectProperty(ga4gh:REL_016))
+Declaration(ObjectProperty(ga4gh:REL_017))
+Declaration(ObjectProperty(ga4gh:REL_018))
+Declaration(ObjectProperty(ga4gh:REL_019))
+Declaration(ObjectProperty(ga4gh:REL_020))
+Declaration(ObjectProperty(ga4gh:REL_021))
+Declaration(ObjectProperty(ga4gh:REL_022))
+Declaration(ObjectProperty(ga4gh:REL_023))
+Declaration(ObjectProperty(ga4gh:REL_024))
+Declaration(ObjectProperty(ga4gh:REL_025))
+Declaration(ObjectProperty(ga4gh:REL_026))
+Declaration(ObjectProperty(ga4gh:REL_027))
+Declaration(ObjectProperty(ga4gh:REL_028))
+Declaration(ObjectProperty(ga4gh:REL_029))
+Declaration(ObjectProperty(ga4gh:REL_030))
+Declaration(ObjectProperty(ga4gh:REL_031))
+Declaration(ObjectProperty(ga4gh:REL_032))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: ga4gh:REL_001 (relative)
+
+AnnotationAssertion(rdfs:label ga4gh:REL_001 "relative")
+SubObjectPropertyOf(ga4gh:REL_001 owl:topObjectProperty)
+SymmetricObjectProperty(ga4gh:REL_001)
+TransitiveObjectProperty(ga4gh:REL_001)
+ObjectPropertyDomain(ga4gh:REL_001 ga4gh:REL_998)
+ObjectPropertyRange(ga4gh:REL_001 ga4gh:REL_998)
+
+# Object Property: ga4gh:REL_002 (biological relative)
+
+AnnotationAssertion(rdfs:label ga4gh:REL_002 "biological relative")
+SubObjectPropertyOf(ga4gh:REL_002 ga4gh:REL_001)
+SymmetricObjectProperty(ga4gh:REL_002)
+
+# Object Property: ga4gh:REL_003 (biological parent)
+
+AnnotationAssertion(rdfs:label ga4gh:REL_003 "biological parent")
+SubObjectPropertyOf(ga4gh:REL_003 ga4gh:REL_002)
+InverseObjectProperties(ga4gh:REL_003 ga4gh:REL_032)
+ObjectPropertyDomain(ga4gh:REL_003 ga4gh:REL_998)
+ObjectPropertyRange(ga4gh:REL_003 ga4gh:REL_998)
+
+# Object Property: ga4gh:REL_004 (sperm/ovum donor)
+
+AnnotationAssertion(rdfs:label ga4gh:REL_004 "sperm/ovum donor")
+SubObjectPropertyOf(ga4gh:REL_004 ga4gh:REL_003)
+
+# Object Property: ga4gh:REL_005 (gestational carrier)
+
+AnnotationAssertion(rdfs:label ga4gh:REL_005 "gestational carrier")
+SubObjectPropertyOf(ga4gh:REL_005 ga4gh:REL_001)
+FunctionalObjectProperty(ga4gh:REL_005)
+ObjectPropertyDomain(ga4gh:REL_005 ga4gh:REL_998)
+ObjectPropertyRange(ga4gh:REL_005 ga4gh:REL_993)
+
+# Object Property: ga4gh:REL_006 (surrogate ovum donor)
+
+AnnotationAssertion(rdfs:label ga4gh:REL_006 "surrogate ovum donor")
+SubObjectPropertyOf(ga4gh:REL_006 ga4gh:REL_004)
+SubObjectPropertyOf(ga4gh:REL_006 ga4gh:REL_005)
+FunctionalObjectProperty(ga4gh:REL_006)
+ObjectPropertyDomain(ga4gh:REL_006 ga4gh:REL_998)
+ObjectPropertyRange(ga4gh:REL_006 ga4gh:REL_993)
+
+# Object Property: ga4gh:REL_007 (biological sibling)
+
+AnnotationAssertion(rdfs:label ga4gh:REL_007 "biological sibling")
+SubObjectPropertyOf(ga4gh:REL_007 ga4gh:REL_002)
+SymmetricObjectProperty(ga4gh:REL_007)
+TransitiveObjectProperty(ga4gh:REL_007)
+ObjectPropertyDomain(ga4gh:REL_007 ga4gh:REL_998)
+ObjectPropertyRange(ga4gh:REL_007 ga4gh:REL_998)
+
+# Object Property: ga4gh:REL_008 (full sibling)
+
+AnnotationAssertion(rdfs:label ga4gh:REL_008 "full sibling")
+SubObjectPropertyOf(ga4gh:REL_008 ga4gh:REL_007)
+SymmetricObjectProperty(ga4gh:REL_008)
+TransitiveObjectProperty(ga4gh:REL_008)
+ObjectPropertyDomain(ga4gh:REL_008 ga4gh:REL_998)
+ObjectPropertyRange(ga4gh:REL_008 ga4gh:REL_998)
+
+# Object Property: ga4gh:REL_009 (twin)
+
+AnnotationAssertion(rdfs:label ga4gh:REL_009 "twin")
+SubObjectPropertyOf(ga4gh:REL_009 ga4gh:REL_008)
+SymmetricObjectProperty(ga4gh:REL_009)
+TransitiveObjectProperty(ga4gh:REL_009)
+ObjectPropertyDomain(ga4gh:REL_009 ga4gh:REL_998)
+ObjectPropertyRange(ga4gh:REL_009 ga4gh:REL_998)
+
+# Object Property: ga4gh:REL_010 (monozygotic twin)
+
+AnnotationAssertion(rdfs:label ga4gh:REL_010 "monozygotic twin")
+SubObjectPropertyOf(ga4gh:REL_010 ga4gh:REL_009)
+SymmetricObjectProperty(ga4gh:REL_010)
+TransitiveObjectProperty(ga4gh:REL_010)
+ObjectPropertyDomain(ga4gh:REL_010 ga4gh:REL_998)
+ObjectPropertyRange(ga4gh:REL_010 ga4gh:REL_998)
+
+# Object Property: ga4gh:REL_011 (polyzygotic twin)
+
+AnnotationAssertion(rdfs:label ga4gh:REL_011 "polyzygotic twin")
+SubObjectPropertyOf(ga4gh:REL_011 ga4gh:REL_010)
+SymmetricObjectProperty(ga4gh:REL_011)
+TransitiveObjectProperty(ga4gh:REL_011)
+ObjectPropertyDomain(ga4gh:REL_011 ga4gh:REL_998)
+ObjectPropertyRange(ga4gh:REL_011 ga4gh:REL_998)
+
+# Object Property: ga4gh:REL_012 (half-sibling)
+
+AnnotationAssertion(rdfs:label ga4gh:REL_012 "half-sibling")
+SubObjectPropertyOf(ga4gh:REL_012 ga4gh:REL_007)
+SymmetricObjectProperty(ga4gh:REL_012)
+
+# Object Property: ga4gh:REL_013 (parental-sibling)
+
+AnnotationAssertion(rdfs:label ga4gh:REL_013 "parental-sibling")
+SubObjectPropertyOf(ga4gh:REL_013 ga4gh:REL_002)
+ObjectPropertyDomain(ga4gh:REL_013 ga4gh:REL_998)
+ObjectPropertyRange(ga4gh:REL_013 ga4gh:REL_998)
+
+# Object Property: ga4gh:REL_014 (cousin)
+
+AnnotationAssertion(rdfs:label ga4gh:REL_014 "cousin")
+SubObjectPropertyOf(ga4gh:REL_014 ga4gh:REL_002)
+SymmetricObjectProperty(ga4gh:REL_014)
+ObjectPropertyDomain(ga4gh:REL_014 ga4gh:REL_998)
+ObjectPropertyRange(ga4gh:REL_014 ga4gh:REL_998)
+
+# Object Property: ga4gh:REL_015 (maternal cousin)
+
+AnnotationAssertion(rdfs:label ga4gh:REL_015 "maternal cousin")
+SubObjectPropertyOf(ga4gh:REL_015 ga4gh:REL_014)
+SymmetricObjectProperty(ga4gh:REL_015)
+ObjectPropertyDomain(ga4gh:REL_015 ga4gh:REL_998)
+ObjectPropertyRange(ga4gh:REL_015 ga4gh:REL_998)
+
+# Object Property: ga4gh:REL_016 (paternal cousin)
+
+AnnotationAssertion(rdfs:label ga4gh:REL_016 "paternal cousin")
+SubObjectPropertyOf(ga4gh:REL_016 ga4gh:REL_014)
+SymmetricObjectProperty(ga4gh:REL_016)
+ObjectPropertyDomain(ga4gh:REL_016 ga4gh:REL_998)
+ObjectPropertyRange(ga4gh:REL_016 ga4gh:REL_998)
+
+# Object Property: ga4gh:REL_017 (grandparent)
+
+AnnotationAssertion(rdfs:label ga4gh:REL_017 "grandparent")
+SubObjectPropertyOf(ga4gh:REL_017 ga4gh:REL_002)
+ObjectPropertyDomain(ga4gh:REL_017 ga4gh:REL_998)
+ObjectPropertyRange(ga4gh:REL_017 ga4gh:REL_998)
+
+# Object Property: ga4gh:REL_018 (great-grandparent)
+
+AnnotationAssertion(rdfs:label ga4gh:REL_018 "great-grandparent")
+SubObjectPropertyOf(ga4gh:REL_018 ga4gh:REL_002)
+ObjectPropertyDomain(ga4gh:REL_018 ga4gh:REL_998)
+ObjectPropertyRange(ga4gh:REL_018 ga4gh:REL_998)
+
+# Object Property: ga4gh:REL_019 (social/legal relative)
+
+AnnotationAssertion(rdfs:label ga4gh:REL_019 "social/legal relative")
+SubObjectPropertyOf(ga4gh:REL_019 ga4gh:REL_001)
+SymmetricObjectProperty(ga4gh:REL_019)
+ObjectPropertyDomain(ga4gh:REL_019 ga4gh:REL_998)
+ObjectPropertyRange(ga4gh:REL_019 ga4gh:REL_998)
+
+# Object Property: ga4gh:REL_020 (parent figure)
+
+AnnotationAssertion(rdfs:label ga4gh:REL_020 "parent figure")
+SubObjectPropertyOf(ga4gh:REL_020 ga4gh:REL_019)
+ObjectPropertyDomain(ga4gh:REL_020 ga4gh:REL_998)
+ObjectPropertyRange(ga4gh:REL_020 ga4gh:REL_998)
+
+# Object Property: ga4gh:REL_021 (foster parent)
+
+AnnotationAssertion(rdfs:label ga4gh:REL_021 "foster parent")
+SubObjectPropertyOf(ga4gh:REL_021 ga4gh:REL_020)
+ObjectPropertyDomain(ga4gh:REL_021 ga4gh:REL_998)
+ObjectPropertyRange(ga4gh:REL_021 ga4gh:REL_998)
+
+# Object Property: ga4gh:REL_022 (adoptive parent)
+
+AnnotationAssertion(rdfs:label ga4gh:REL_022 "adoptive parent")
+SubObjectPropertyOf(ga4gh:REL_022 ga4gh:REL_020)
+ObjectPropertyDomain(ga4gh:REL_022 ga4gh:REL_998)
+ObjectPropertyRange(ga4gh:REL_022 ga4gh:REL_998)
+
+# Object Property: ga4gh:REL_023 (step parent)
+
+AnnotationAssertion(rdfs:label ga4gh:REL_023 "step parent")
+SubObjectPropertyOf(ga4gh:REL_023 ga4gh:REL_020)
+ObjectPropertyDomain(ga4gh:REL_023 ga4gh:REL_998)
+ObjectPropertyRange(ga4gh:REL_023 ga4gh:REL_998)
+
+# Object Property: ga4gh:REL_024 (sibling figure)
+
+AnnotationAssertion(rdfs:label ga4gh:REL_024 "sibling figure")
+SubObjectPropertyOf(ga4gh:REL_024 ga4gh:REL_019)
+ObjectPropertyDomain(ga4gh:REL_024 ga4gh:REL_998)
+ObjectPropertyRange(ga4gh:REL_024 ga4gh:REL_998)
+
+# Object Property: ga4gh:REL_025 (step-sibling)
+
+AnnotationAssertion(rdfs:label ga4gh:REL_025 "step-sibling")
+SubObjectPropertyOf(ga4gh:REL_025 ga4gh:REL_024)
+SymmetricObjectProperty(ga4gh:REL_025)
+ObjectPropertyDomain(ga4gh:REL_025 ga4gh:REL_998)
+ObjectPropertyRange(ga4gh:REL_025 ga4gh:REL_998)
+
+# Object Property: ga4gh:REL_026 (partner)
+
+AnnotationAssertion(rdfs:label ga4gh:REL_026 "partner")
+SubObjectPropertyOf(ga4gh:REL_026 ga4gh:REL_019)
+SymmetricObjectProperty(ga4gh:REL_026)
+ObjectPropertyDomain(ga4gh:REL_026 ga4gh:REL_998)
+ObjectPropertyRange(ga4gh:REL_026 ga4gh:REL_998)
+
+# Object Property: ga4gh:REL_027 (biological mother)
+
+AnnotationAssertion(rdfs:label ga4gh:REL_027 "biological mother")
+SubObjectPropertyOf(ga4gh:REL_027 ga4gh:REL_003)
+FunctionalObjectProperty(ga4gh:REL_027)
+ObjectPropertyDomain(ga4gh:REL_027 ga4gh:REL_998)
+ObjectPropertyRange(ga4gh:REL_027 ga4gh:REL_993)
+
+# Object Property: ga4gh:REL_028 (biological father)
+
+AnnotationAssertion(rdfs:label ga4gh:REL_028 "biological father")
+SubObjectPropertyOf(ga4gh:REL_028 ga4gh:REL_003)
+FunctionalObjectProperty(ga4gh:REL_028)
+ObjectPropertyDomain(ga4gh:REL_028 ga4gh:REL_998)
+ObjectPropertyRange(ga4gh:REL_028 ga4gh:REL_994)
+
+# Object Property: ga4gh:REL_029 (mitochondrial donor)
+
+AnnotationAssertion(rdfs:label ga4gh:REL_029 "mitochondrial donor")
+SubObjectPropertyOf(ga4gh:REL_029 ga4gh:REL_001)
+FunctionalObjectProperty(ga4gh:REL_029)
+ObjectPropertyDomain(ga4gh:REL_029 ga4gh:REL_998)
+ObjectPropertyRange(ga4gh:REL_029 ga4gh:REL_993)
+
+# Object Property: ga4gh:REL_030 (consanguineous partner)
+
+AnnotationAssertion(rdfs:label ga4gh:REL_030 "consanguineous partner")
+SubObjectPropertyOf(ga4gh:REL_030 ga4gh:REL_002)
+SubObjectPropertyOf(ga4gh:REL_030 ga4gh:REL_026)
+SymmetricObjectProperty(ga4gh:REL_030)
+ObjectPropertyDomain(ga4gh:REL_030 ga4gh:REL_998)
+ObjectPropertyRange(ga4gh:REL_030 ga4gh:REL_998)
+
+# Object Property: ga4gh:REL_031 (hasSex)
+
+AnnotationAssertion(rdfs:label ga4gh:REL_031 "hasSex")
+FunctionalObjectProperty(ga4gh:REL_031)
+
+# Object Property: ga4gh:REL_032 (biological child)
+
+AnnotationAssertion(rdfs:label ga4gh:REL_032 "biological child")
+SubObjectPropertyOf(ga4gh:REL_032 ga4gh:REL_002)
+# A person cannot be a biological child and a biological parent of another person
+DisjointObjectProperties(ga4gh:REL_032 ga4gh:REL_003)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: ga4gh:REL_993 (Woman)
+
+AnnotationAssertion(rdfs:label ga4gh:REL_993 "Woman")
+EquivalentClasses(ga4gh:REL_993 ObjectIntersectionOf(ga4gh:REL_998 ObjectSomeValuesFrom(ga4gh:REL_031 ga4gh:REL_995)))
+
+# Class: ga4gh:REL_994 (Man)
+
+AnnotationAssertion(rdfs:label ga4gh:REL_994 "Man")
+EquivalentClasses(ga4gh:REL_994 ObjectIntersectionOf(ga4gh:REL_998 ObjectSomeValuesFrom(ga4gh:REL_031 ga4gh:REL_996)))
+
+# Class: ga4gh:REL_995 (Female)
+
+AnnotationAssertion(rdfs:label ga4gh:REL_995 "Female")
+SubClassOf(ga4gh:REL_995 ga4gh:REL_997)
+DisjointClasses(ga4gh:REL_995 ga4gh:REL_996)
+
+# Class: ga4gh:REL_996 (Male)
+
+AnnotationAssertion(rdfs:label ga4gh:REL_996 "Male")
+SubClassOf(ga4gh:REL_996 ga4gh:REL_997)
+
+# Class: ga4gh:REL_997 (Sex)
+
+AnnotationAssertion(rdfs:label ga4gh:REL_997 "Sex")
+EquivalentClasses(ga4gh:REL_997 ObjectUnionOf(ga4gh:REL_995 ga4gh:REL_996))
+SubClassOf(ga4gh:REL_997 ga4gh:REL_999)
+DisjointClasses(ga4gh:REL_997 ga4gh:REL_998)
+
+# Class: ga4gh:REL_998 (Person)
+
+AnnotationAssertion(rdfs:label ga4gh:REL_998 "Person")
+
+# Class: ga4gh:REL_999 (Domain Entity)
+
+AnnotationAssertion(rdfs:label ga4gh:REL_999 "Domain Entity")
+
+SubObjectPropertyOf(ObjectPropertyChain(ga4gh:REL_003 ga4gh:REL_003) ga4gh:REL_017)
+SubObjectPropertyOf(ObjectPropertyChain(ga4gh:REL_003 ga4gh:REL_007 ga4gh:REL_032) ga4gh:REL_014)
+SubObjectPropertyOf(ObjectPropertyChain(ga4gh:REL_017 ga4gh:REL_003) ga4gh:REL_018)
+SubObjectPropertyOf(ObjectPropertyChain(ga4gh:REL_027 ga4gh:REL_007 ga4gh:REL_032) ga4gh:REL_015)
+SubObjectPropertyOf(ObjectPropertyChain(ga4gh:REL_028 ga4gh:REL_007 ga4gh:REL_032) ga4gh:REL_016)
+)

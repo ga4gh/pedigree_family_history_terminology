@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.ga4gh</groupId>
+	<artifactId>family-history-ontology</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<name>family-history-ontology</name>
+	<description>Family history ontology for the GA4GH pedigree standard.</description>
+	<properties>
+		<java.version>11</java.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	<dependencies>
+
+		<dependency>
+			<groupId>net.sourceforge.owlapi</groupId>
+			<artifactId>jfact</artifactId>
+			<version>5.0.3</version>
+		</dependency>
+
+		<dependency>
+			<groupId>net.sourceforge.owlapi</groupId>
+			<artifactId>owlapi-distribution</artifactId>
+			<version>5.1.17</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-api</artifactId>
+			<version>5.8.0-M1</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>1.7.30</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+				<configuration>
+					<source>11</source>
+					<target>11</target>
+					<compilerArgs>
+						<arg>-Xlint</arg>
+					</compilerArgs>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M5</version>
+				<configuration>
+					<!-- Needed because of a bug in the Surefire plugin -->
+					<argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
