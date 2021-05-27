@@ -8,6 +8,7 @@ Prefix(ga4gh:=<http://purl.org/ga4gh/rel.owl#>)
 
 
 Ontology(<http://purl.org/ga4gh/rel.owl>
+<http://purl.org/ga4gh/rel/releases/2021-05-28/rel.owl>
 Annotation(rdfs:comment "A family relationships ontology."^^xsd:string)
 
 Declaration(Class(ga4gh:REL_993))
@@ -76,6 +77,7 @@ SubObjectPropertyOf(ga4gh:REL_003 ga4gh:REL_002)
 InverseObjectProperties(ga4gh:REL_003 ga4gh:REL_032)
 ObjectPropertyDomain(ga4gh:REL_003 ga4gh:REL_998)
 ObjectPropertyRange(ga4gh:REL_003 ga4gh:REL_998)
+DisjointObjectProperties(ga4gh:REL_003 ga4gh:REL_032)
 
 # Object Property: ga4gh:REL_004 (sperm/ovum donor)
 
@@ -296,8 +298,6 @@ FunctionalObjectProperty(ga4gh:REL_031)
 
 AnnotationAssertion(rdfs:label ga4gh:REL_032 "biological child")
 SubObjectPropertyOf(ga4gh:REL_032 ga4gh:REL_002)
-# A person cannot be a biological child and a biological parent of another person
-DisjointObjectProperties(ga4gh:REL_032 ga4gh:REL_003)
 
 
 
@@ -340,6 +340,7 @@ AnnotationAssertion(rdfs:label ga4gh:REL_998 "Person")
 # Class: ga4gh:REL_999 (Domain Entity)
 
 AnnotationAssertion(rdfs:label ga4gh:REL_999 "Domain Entity")
+
 
 SubObjectPropertyOf(ObjectPropertyChain(ga4gh:REL_003 ga4gh:REL_003) ga4gh:REL_017)
 SubObjectPropertyOf(ObjectPropertyChain(ga4gh:REL_003 ga4gh:REL_007 ga4gh:REL_032) ga4gh:REL_014)
