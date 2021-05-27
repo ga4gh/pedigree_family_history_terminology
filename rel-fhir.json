@@ -1,0 +1,703 @@
+{
+  "resourceType": "CodeSystem",
+  "url": "http://purl.org/ga4gh/rel.fhir",
+  "version": "20210528",
+  "name": "FamilyHistoryRelationsOntology",
+  "title": "Family History Relations Ontology",
+  "status": "draft",
+  "experimental": false,
+  "description": "A family relationships ontology.",
+  "valueSet": "http://purl.org/ga4gh/rel.fhir?vs",
+  "hierarchyMeaning": "is-a",
+  "compositional": false,
+  "versionNeeded": false,
+  "content": "complete",
+  "count": 41,
+  "filter": [ {
+    "code": "root",
+    "operator": [ "=" ],
+    "value": "True or false."
+  }, {
+    "code": "deprecated",
+    "operator": [ "=" ],
+    "value": "True or false."
+  }, {
+    "code": "imported",
+    "operator": [ "=" ],
+    "value": "True or false"
+  } ],
+  "property": [ {
+    "code": "parent",
+    "description": "Parent codes.",
+    "type": "code"
+  }, {
+    "code": "imported",
+    "description": "Indicates if the concept is imported from another code system.",
+    "type": "boolean"
+  }, {
+    "code": "root",
+    "description": "Indicates if this concept is a root concept (i.e. Thing is equivalent or a direct parent)",
+    "type": "boolean"
+  }, {
+    "code": "deprecated",
+    "description": "Indicates if this concept is deprecated.",
+    "type": "boolean"
+  } ],
+  "concept": [ {
+    "code": "REL_996",
+    "display": "Male",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "REL_997"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "REL_995",
+    "display": "Female",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "REL_997"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "REL_994",
+    "display": "Man",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "REL_998"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "REL_993",
+    "display": "Woman",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "REL_998"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "REL_999",
+    "display": "Domain Entity",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "Thing"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "REL_998",
+    "display": "Person",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "Thing"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "REL_997",
+    "display": "Sex",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "REL_999"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "Thing",
+    "display": "Thing",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "root",
+      "valueBoolean": true
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "REL_001",
+    "display": "relative",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "topObjectProperty"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "REL_002",
+    "display": "biological relative",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "REL_001"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "REL_003",
+    "display": "biological parent",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "REL_002"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "REL_004",
+    "display": "sperm/ovum donor",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "REL_003"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "REL_005",
+    "display": "gestational carrier",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "REL_001"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "REL_006",
+    "display": "surrogate ovum donor",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "REL_004"
+    }, {
+      "code": "parent",
+      "valueCode": "REL_005"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "REL_007",
+    "display": "biological sibling",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "REL_002"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "REL_008",
+    "display": "full sibling",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "REL_007"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "REL_009",
+    "display": "twin",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "REL_008"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "REL_010",
+    "display": "monozygotic twin",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "REL_009"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "REL_011",
+    "display": "polyzygotic twin",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "REL_010"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "REL_012",
+    "display": "half-sibling",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "REL_007"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "REL_013",
+    "display": "parental-sibling",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "REL_002"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "REL_014",
+    "display": "cousin",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "REL_002"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "REL_015",
+    "display": "maternal cousin",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "REL_014"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "REL_016",
+    "display": "paternal cousin",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "REL_014"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "REL_017",
+    "display": "grandparent",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "REL_002"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "REL_018",
+    "display": "great-grandparent",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "REL_002"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "REL_019",
+    "display": "social/legal relative",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "REL_001"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "REL_020",
+    "display": "parent figure",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "REL_019"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "REL_021",
+    "display": "foster parent",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "REL_020"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "REL_022",
+    "display": "adoptive parent",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "REL_020"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "REL_023",
+    "display": "step parent",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "REL_020"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "REL_024",
+    "display": "sibling figure",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "REL_019"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "REL_025",
+    "display": "step-sibling",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "REL_024"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "REL_026",
+    "display": "partner",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "REL_019"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "REL_027",
+    "display": "biological mother",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "REL_003"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "REL_028",
+    "display": "biological father",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "REL_003"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "REL_029",
+    "display": "mitochondrial donor",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "REL_001"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "REL_030",
+    "display": "consanguineous partner",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "REL_026"
+    }, {
+      "code": "parent",
+      "valueCode": "REL_002"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "REL_031",
+    "display": "hasSex",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "topObjectProperty"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "REL_032",
+    "display": "biological child",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "REL_002"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "topObjectProperty",
+    "display": "topObjectProperty",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "root",
+      "valueBoolean": true
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  } ]
+}
