@@ -11,9 +11,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Remove FHIR code system from Git
-        run: git rm --ignore-unmatch rel-fhir.json
-
       - name: Set up JDK
         uses: actions/setup-java@v1
         with:
@@ -27,7 +24,7 @@ jobs:
       - name: Run transformation
         run: java -jar fhirowl.jar -i src/main/resources/rel.owl -o rel-fhir.json -r jfact -useFhirExtension -dateRegex "(?<year>\\d{4})-(?<month>\\d{2})-(?<day>\\d{2})" -n FamilyHistoryRelationsOntology -t "Family History Relations Ontology"
 
-      - name: Add new FHIR code system from Git
+      - name: Add FHIR code system from Git
         run: git add rel-fhir.json
 
       - name: Set up Git config
@@ -36,7 +33,15 @@ jobs:
           git config --local user.name "github-actions[bot]"
 
       - name: Commit FHIR code system
-        run: git commit -m "Created FHIR code system"
+        run: |
+          git diff --exit-code rel-fhir.json
+          if [ $? -eq 1 ]
+          then
+            echo "Commiting FHIR code system because it has changes"
+            git commit -m "Updated FHIR code system"
+          else
+            echo "FHIR code system did not change"
+          fi
 
       - name: Push changes
         uses: ad-m/github-push-action@v0.6.0
