@@ -44,14 +44,14 @@
     "type": "boolean"
   } ],
   "concept": [ {
-    "code": "REL_996",
+    "code": "REL:996",
     "display": "Male",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL_997"
+      "valueCode": "REL:997"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -60,14 +60,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL_995",
+    "code": "REL:995",
     "display": "Female",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL_997"
+      "valueCode": "REL:997"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -76,14 +76,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL_994",
+    "code": "REL:994",
     "display": "Man",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL_998"
+      "valueCode": "REL:998"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -92,14 +92,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL_993",
+    "code": "REL:993",
     "display": "Woman",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL_998"
+      "valueCode": "REL:998"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -108,7 +108,7 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL_999",
+    "code": "REL:999",
     "display": "Domain Entity",
     "property": [ {
       "code": "imported",
@@ -124,7 +124,7 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL_998",
+    "code": "REL:998",
     "display": "Person",
     "property": [ {
       "code": "imported",
@@ -140,14 +140,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL_997",
+    "code": "REL:997",
     "display": "Sex",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL_999"
+      "valueCode": "REL:999"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -169,7 +169,7 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL_001",
+    "code": "REL:001",
     "display": "relative",
     "property": [ {
       "code": "imported",
@@ -185,14 +185,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL_002",
+    "code": "REL:002",
     "display": "biological relative",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL_001"
+      "valueCode": "REL:001"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -201,14 +201,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL_003",
+    "code": "REL:003",
     "display": "biological parent",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL_002"
+      "valueCode": "REL:002"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -217,14 +217,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL_004",
+    "code": "REL:004",
     "display": "sperm/ovum donor",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL_003"
+      "valueCode": "REL:003"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -233,14 +233,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL_005",
+    "code": "REL:005",
     "display": "gestational carrier",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL_001"
+      "valueCode": "REL:001"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -249,17 +249,17 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL_006",
+    "code": "REL:006",
     "display": "surrogate ovum donor",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL_004"
+      "valueCode": "REL:004"
     }, {
       "code": "parent",
-      "valueCode": "REL_005"
+      "valueCode": "REL:005"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -268,14 +268,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL_007",
+    "code": "REL:007",
     "display": "biological sibling",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL_002"
+      "valueCode": "REL:002"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -284,14 +284,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL_008",
+    "code": "REL:008",
     "display": "full sibling",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL_007"
+      "valueCode": "REL:007"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -300,14 +300,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL_009",
+    "code": "REL:009",
     "display": "twin",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL_008"
+      "valueCode": "REL:008"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -316,14 +316,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL_010",
+    "code": "REL:010",
     "display": "monozygotic twin",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL_009"
+      "valueCode": "REL:009"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -332,14 +332,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL_011",
+    "code": "REL:011",
     "display": "polyzygotic twin",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL_010"
+      "valueCode": "REL:010"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -348,14 +348,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL_012",
+    "code": "REL:012",
     "display": "half-sibling",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL_007"
+      "valueCode": "REL:007"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -364,14 +364,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL_013",
+    "code": "REL:013",
     "display": "parental-sibling",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL_002"
+      "valueCode": "REL:002"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -380,14 +380,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL_014",
+    "code": "REL:014",
     "display": "cousin",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL_002"
+      "valueCode": "REL:002"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -396,14 +396,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL_015",
+    "code": "REL:015",
     "display": "maternal cousin",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL_014"
+      "valueCode": "REL:014"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -412,14 +412,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL_016",
+    "code": "REL:016",
     "display": "paternal cousin",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL_014"
+      "valueCode": "REL:014"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -428,14 +428,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL_017",
+    "code": "REL:017",
     "display": "grandparent",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL_002"
+      "valueCode": "REL:002"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -444,14 +444,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL_018",
+    "code": "REL:018",
     "display": "great-grandparent",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL_002"
+      "valueCode": "REL:002"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -460,14 +460,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL_019",
+    "code": "REL:019",
     "display": "social/legal relative",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL_001"
+      "valueCode": "REL:001"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -476,14 +476,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL_020",
+    "code": "REL:020",
     "display": "parent figure",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL_019"
+      "valueCode": "REL:019"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -492,14 +492,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL_021",
+    "code": "REL:021",
     "display": "foster parent",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL_020"
+      "valueCode": "REL:020"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -508,14 +508,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL_022",
+    "code": "REL:022",
     "display": "adoptive parent",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL_020"
+      "valueCode": "REL:020"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -524,14 +524,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL_023",
+    "code": "REL:023",
     "display": "step parent",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL_020"
+      "valueCode": "REL:020"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -540,14 +540,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL_024",
+    "code": "REL:024",
     "display": "sibling figure",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL_019"
+      "valueCode": "REL:019"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -556,14 +556,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL_025",
+    "code": "REL:025",
     "display": "step-sibling",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL_024"
+      "valueCode": "REL:024"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -572,14 +572,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL_026",
+    "code": "REL:026",
     "display": "partner",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL_019"
+      "valueCode": "REL:019"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -588,14 +588,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL_027",
+    "code": "REL:027",
     "display": "biological mother",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL_003"
+      "valueCode": "REL:003"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -604,14 +604,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL_028",
+    "code": "REL:028",
     "display": "biological father",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL_003"
+      "valueCode": "REL:003"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -620,14 +620,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL_029",
+    "code": "REL:029",
     "display": "mitochondrial donor",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL_001"
+      "valueCode": "REL:001"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -636,17 +636,17 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL_030",
+    "code": "REL:030",
     "display": "consanguineous partner",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL_026"
+      "valueCode": "REL:026"
     }, {
       "code": "parent",
-      "valueCode": "REL_002"
+      "valueCode": "REL:002"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -655,7 +655,7 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL_031",
+    "code": "REL:031",
     "display": "hasSex",
     "property": [ {
       "code": "imported",
@@ -671,14 +671,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL_032",
+    "code": "REL:032",
     "display": "biological child",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL_002"
+      "valueCode": "REL:002"
     }, {
       "code": "root",
       "valueBoolean": false
