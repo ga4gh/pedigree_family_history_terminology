@@ -23,7 +23,7 @@ jobs:
           args: -O fhirowl.jar https://github.com/aehrc/fhir-owl/releases/download/v1.1/fhir-owl-v1.1.jar
 
       - name: Run transformation
-        run: java -jar fhirowl.jar -i src/main/resources/rel.owl -o rel-fhir.json -r jfact -useFhirExtension -dateRegex "(?<year>\\d{4})-(?<month>\\d{2})-(?<day>\\d{2})" -n FamilyHistoryRelationsOntology -t "Family History Relations Ontology" -codeReplace "_,:"
+        run: java -jar fhirowl.jar -i src/main/resources/rel.owl -o rel-fhir.json -r jfact -useFhirExtension -dateRegex "(?<year>\\d{4})-(?<month>\\d{2})-(?<day>\\d{2})" -n FamilyHistoryRelationsOntology -t "Family History Relations Ontology" -codeReplace _,:
 
       - name: Add FHIR code system from Git
         run: git add rel-fhir.json
