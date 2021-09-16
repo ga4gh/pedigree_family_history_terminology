@@ -24,10 +24,10 @@ jobs:
 
       - name: Run transformation
         run: |
-          java -jar fhirowl.jar -i src/main/resources/rel.owl -o rel-fhir.json -r jfact -useFhirExtension -dateRegex "(?<year>\\d{4})-(?<month>\\d{2})-(?<day>\\d{2})" -n FamilyHistoryRelationsOntology -t "Family History Relations Ontology" -codeReplace _,:
+          java -jar fhirowl.jar -i src/main/resources/kin.owl -o kin-fhir.json -r jfact -useFhirExtension -dateRegex "(?<year>\\d{4})-(?<month>\\d{2})-(?<day>\\d{2})" -n FamilyHistoryRelationsOntology -t "Family History Relations Ontology" -codeReplace _,:
 
       - name: Add FHIR code system from Git
-        run: git add rel-fhir.json
+        run: git add kin-fhir.json
 
       - name: Set up Git config
         run: |
@@ -36,7 +36,7 @@ jobs:
 
       - name: Commit FHIR code system
         run: |
-          git diff --exit-code rel-fhir.json
+          git diff --exit-code kin-fhir.json
           if [ $? -eq 1 ]
           then
             echo "Commiting FHIR code system because it has changes"
