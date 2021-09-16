@@ -37,12 +37,12 @@ jobs:
       - name: Commit FHIR code system
         run: |
           git diff --exit-code kin-fhir.json
-          if [ $? -eq 1 ]
+          if [ $? -eq 0 ]
           then
+            echo "FHIR code system did not change"
+          else
             echo "Commiting FHIR code system because it has changes"
             git commit -m "Updated FHIR code system"
-          else
-            echo "FHIR code system did not change"
           fi
 
       - name: Push changes
