@@ -44,7 +44,7 @@ jobs:
 
       - name: Commit FHIR code system
         run: |
-          if [ ${{ env.file_changed }} -eq 1 || ${{ env.file_exists }} -eq 0 ]
+          if [ ${{ env.file_changed }} -eq 1 ] || [ ${{ env.file_exists }} -eq 0 ]
           then
             echo "Commiting FHIR code system because it didn't exist or it has changes"
             git commit -m "Updated FHIR code system"
