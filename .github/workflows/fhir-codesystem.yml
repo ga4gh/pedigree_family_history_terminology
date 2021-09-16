@@ -19,8 +19,7 @@ jobs:
 
       - name: Check file exists
         run: |
-          [ ! -f kin-fhir.json ]
-          echo "file_exists=$?" >> $GITHUB_ENV
+          [ ! -f kin-fhir.json ] | echo "file_exists=$?" >> $GITHUB_ENV
 
       - name: Download FHIR-OWL
         uses: wei/wget@v1
