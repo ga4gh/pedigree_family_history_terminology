@@ -1,18 +1,18 @@
 {
   "resourceType": "CodeSystem",
-  "url": "http://purl.org/ga4gh/rel.fhir",
-  "version": "20210528",
+  "url": "http://purl.org/ga4gh/kin.fhir",
+  "version": "20210805",
   "name": "FamilyHistoryRelationsOntology",
   "title": "Family History Relations Ontology",
   "status": "draft",
   "experimental": false,
   "description": "A family relationships ontology.",
-  "valueSet": "http://purl.org/ga4gh/rel.fhir?vs",
+  "valueSet": "http://purl.org/ga4gh/kin.fhir?vs",
   "hierarchyMeaning": "is-a",
   "compositional": false,
   "versionNeeded": false,
   "content": "complete",
-  "count": 41,
+  "count": 55,
   "filter": [ {
     "code": "root",
     "operator": [ "=" ],
@@ -44,46 +44,14 @@
     "type": "boolean"
   } ],
   "concept": [ {
-    "code": "REL:996",
-    "display": "Male",
-    "property": [ {
-      "code": "imported",
-      "valueBoolean": false
-    }, {
-      "code": "parent",
-      "valueCode": "REL:997"
-    }, {
-      "code": "root",
-      "valueBoolean": false
-    }, {
-      "code": "deprecated",
-      "valueBoolean": false
-    } ]
-  }, {
-    "code": "REL:995",
-    "display": "Female",
-    "property": [ {
-      "code": "imported",
-      "valueBoolean": false
-    }, {
-      "code": "parent",
-      "valueCode": "REL:997"
-    }, {
-      "code": "root",
-      "valueBoolean": false
-    }, {
-      "code": "deprecated",
-      "valueBoolean": false
-    } ]
-  }, {
-    "code": "REL:994",
+    "code": "KIN:994",
     "display": "Man",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL:998"
+      "valueCode": "KIN:998"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -92,14 +60,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL:993",
+    "code": "KIN:993",
     "display": "Woman",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL:998"
+      "valueCode": "KIN:998"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -108,14 +76,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL:999",
-    "display": "Domain Entity",
+    "code": "KIN:996",
+    "display": "Male",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "Thing"
+      "valueCode": "KIN:997"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -124,7 +92,23 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL:998",
+    "code": "KIN:995",
+    "display": "Female",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "KIN:997"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "KIN:998",
     "display": "Person",
     "property": [ {
       "code": "imported",
@@ -140,14 +124,30 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL:997",
+    "code": "KIN:997",
     "display": "Sex",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL:999"
+      "valueCode": "KIN:999"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "KIN:999",
+    "display": "Domain Entity",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "Thing"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -169,8 +169,8 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL:001",
-    "display": "relative",
+    "code": "KIN:001",
+    "display": "isRelative",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
@@ -185,14 +185,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL:002",
-    "display": "biological relative",
+    "code": "KIN:002",
+    "display": "isBiologicalRelative",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL:001"
+      "valueCode": "KIN:001"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -201,14 +201,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL:003",
-    "display": "biological parent",
+    "code": "KIN:003",
+    "display": "isBiologicalParent",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL:002"
+      "valueCode": "KIN:002"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -217,14 +217,17 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL:004",
-    "display": "sperm/ovum donor",
+    "code": "KIN:004",
+    "display": "isSpermDonor",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL:003"
+      "valueCode": "KIN:033"
+    }, {
+      "code": "parent",
+      "valueCode": "KIN:003"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -233,14 +236,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL:005",
-    "display": "gestational carrier",
+    "code": "KIN:005",
+    "display": "isGestationalCarrier",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL:001"
+      "valueCode": "KIN:001"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -249,17 +252,17 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL:006",
-    "display": "surrogate ovum donor",
+    "code": "KIN:006",
+    "display": "isSurrogateOvumDonor",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL:004"
+      "valueCode": "KIN:038"
     }, {
       "code": "parent",
-      "valueCode": "REL:005"
+      "valueCode": "KIN:005"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -268,14 +271,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL:007",
-    "display": "biological sibling",
+    "code": "KIN:007",
+    "display": "isBiologicalSibling",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL:002"
+      "valueCode": "KIN:002"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -284,14 +287,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL:008",
-    "display": "full sibling",
+    "code": "KIN:008",
+    "display": "isFullsibling",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL:007"
+      "valueCode": "KIN:007"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -300,14 +303,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL:009",
-    "display": "twin",
+    "code": "KIN:009",
+    "display": "isTwin",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL:008"
+      "valueCode": "KIN:008"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -316,14 +319,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL:010",
-    "display": "monozygotic twin",
+    "code": "KIN:010",
+    "display": "isMonozygoticTwin",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL:009"
+      "valueCode": "KIN:009"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -332,14 +335,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL:011",
-    "display": "polyzygotic twin",
+    "code": "KIN:011",
+    "display": "isPolyzygoticTwin",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL:010"
+      "valueCode": "KIN:010"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -348,14 +351,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL:012",
-    "display": "half-sibling",
+    "code": "KIN:012",
+    "display": "isHalfSibling",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL:007"
+      "valueCode": "KIN:007"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -364,14 +367,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL:013",
-    "display": "parental-sibling",
+    "code": "KIN:013",
+    "display": "isParentalSibling",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL:002"
+      "valueCode": "KIN:002"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -380,14 +383,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL:014",
-    "display": "cousin",
+    "code": "KIN:014",
+    "display": "isCousin",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL:002"
+      "valueCode": "KIN:002"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -396,14 +399,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL:015",
-    "display": "maternal cousin",
+    "code": "KIN:015",
+    "display": "isMaternalCousin",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL:014"
+      "valueCode": "KIN:014"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -412,14 +415,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL:016",
-    "display": "paternal cousin",
+    "code": "KIN:016",
+    "display": "isPaternalCousin",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL:014"
+      "valueCode": "KIN:014"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -428,14 +431,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL:017",
-    "display": "grandparent",
+    "code": "KIN:017",
+    "display": "isGrandparent",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL:002"
+      "valueCode": "KIN:002"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -444,14 +447,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL:018",
-    "display": "great-grandparent",
+    "code": "KIN:018",
+    "display": "isGreatGrandparent",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL:002"
+      "valueCode": "KIN:002"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -460,14 +463,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL:019",
-    "display": "social/legal relative",
+    "code": "KIN:019",
+    "display": "isSocialLegalRelative",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL:001"
+      "valueCode": "KIN:001"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -476,14 +479,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL:020",
-    "display": "parent figure",
+    "code": "KIN:020",
+    "display": "isParentFigure",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL:019"
+      "valueCode": "KIN:019"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -492,14 +495,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL:021",
-    "display": "foster parent",
+    "code": "KIN:021",
+    "display": "isFosterParent",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL:020"
+      "valueCode": "KIN:020"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -508,14 +511,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL:022",
-    "display": "adoptive parent",
+    "code": "KIN:022",
+    "display": "isAdoptiveParent",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL:020"
+      "valueCode": "KIN:020"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -524,14 +527,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL:023",
-    "display": "step parent",
+    "code": "KIN:023",
+    "display": "isStepParent",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL:020"
+      "valueCode": "KIN:020"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -540,14 +543,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL:024",
-    "display": "sibling figure",
+    "code": "KIN:024",
+    "display": "isSiblingFigure",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL:019"
+      "valueCode": "KIN:019"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -556,14 +559,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL:025",
-    "display": "step-sibling",
+    "code": "KIN:025",
+    "display": "isStepSibling",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL:024"
+      "valueCode": "KIN:024"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -572,14 +575,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL:026",
-    "display": "partner",
+    "code": "KIN:026",
+    "display": "isPartner",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL:019"
+      "valueCode": "KIN:019"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -588,14 +591,17 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL:027",
-    "display": "biological mother",
+    "code": "KIN:027",
+    "display": "isBiologicalMother",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL:003"
+      "valueCode": "KIN:033"
+    }, {
+      "code": "parent",
+      "valueCode": "KIN:003"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -604,14 +610,17 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL:028",
-    "display": "biological father",
+    "code": "KIN:028",
+    "display": "isBiologicalFather",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL:003"
+      "valueCode": "KIN:033"
+    }, {
+      "code": "parent",
+      "valueCode": "KIN:003"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -620,14 +629,14 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL:029",
-    "display": "mitochondrial donor",
+    "code": "KIN:029",
+    "display": "isMitochondrialDonor",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL:001"
+      "valueCode": "KIN:001"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -636,17 +645,17 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL:030",
-    "display": "consanguineous partner",
+    "code": "KIN:030",
+    "display": "isConsanguineousPartner",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL:026"
+      "valueCode": "KIN:002"
     }, {
       "code": "parent",
-      "valueCode": "REL:002"
+      "valueCode": "KIN:026"
     }, {
       "code": "root",
       "valueBoolean": false
@@ -655,7 +664,7 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL:031",
+    "code": "KIN:031",
     "display": "hasSex",
     "property": [ {
       "code": "imported",
@@ -671,14 +680,256 @@
       "valueBoolean": false
     } ]
   }, {
-    "code": "REL:032",
-    "display": "biological child",
+    "code": "KIN:032",
+    "display": "isBiologicalChild",
     "property": [ {
       "code": "imported",
       "valueBoolean": false
     }, {
       "code": "parent",
-      "valueCode": "REL:002"
+      "valueCode": "KIN:002"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "KIN:033",
+    "display": "hasBiologicalChild",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "KIN:002"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "KIN:034",
+    "display": "hasBiologicalParent",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "KIN:002"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "KIN:035",
+    "display": "hasGrandparent",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "KIN:002"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "KIN:036",
+    "display": "isGrandchild",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "KIN:002"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "KIN:037",
+    "display": "hasGrandchild",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "KIN:002"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "KIN:038",
+    "display": "isOvumDonor",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "KIN:033"
+    }, {
+      "code": "parent",
+      "valueCode": "KIN:003"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "KIN:039",
+    "display": "hasGestationalCarrier",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "KIN:001"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "KIN:040",
+    "display": "hasBiologicalFather",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "KIN:034"
+    }, {
+      "code": "parent",
+      "valueCode": "KIN:032"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "KIN:041",
+    "display": "hasBiologicalMother",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "KIN:034"
+    }, {
+      "code": "parent",
+      "valueCode": "KIN:032"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "KIN:042",
+    "display": "hasOvumDonor",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "KIN:034"
+    }, {
+      "code": "parent",
+      "valueCode": "KIN:032"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "KIN:043",
+    "display": "hasSurrogateOvumDonor",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "KIN:042"
+    }, {
+      "code": "parent",
+      "valueCode": "KIN:039"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "KIN:044",
+    "display": "hasSpermDonor",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "KIN:034"
+    }, {
+      "code": "parent",
+      "valueCode": "KIN:032"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "KIN:045",
+    "display": "hasGreatGrandParent",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "KIN:002"
+    }, {
+      "code": "root",
+      "valueBoolean": false
+    }, {
+      "code": "deprecated",
+      "valueBoolean": false
+    } ]
+  }, {
+    "code": "KIN:046",
+    "display": "hasParentalSibling",
+    "property": [ {
+      "code": "imported",
+      "valueBoolean": false
+    }, {
+      "code": "parent",
+      "valueCode": "KIN:002"
     }, {
       "code": "root",
       "valueBoolean": false

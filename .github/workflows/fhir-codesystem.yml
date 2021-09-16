@@ -17,6 +17,11 @@ jobs:
         with:
           java-version: 11
 
+      - name: Check file exists
+        run: |
+          [ ! -f kin-fhir.json ]
+          echo "file_exists=$?" >> $GITHUB_ENV
+
       - name: Download FHIR-OWL
         uses: wei/wget@v1
         with:
@@ -24,10 +29,10 @@ jobs:
 
       - name: Run transformation
         run: |
-          java -jar fhirowl.jar -i src/main/resources/rel.owl -o rel-fhir.json -r jfact -useFhirExtension -dateRegex "(?<year>\\d{4})-(?<month>\\d{2})-(?<day>\\d{2})" -n FamilyHistoryRelationsOntology -t "Family History Relations Ontology" -codeReplace _,:
+          java -jar fhirowl.jar -i src/main/resources/kin.owl -o kin-fhir.json -r jfact -useFhirExtension -dateRegex "(?<year>\\d{4})-(?<month>\\d{2})-(?<day>\\d{2})" -n FamilyHistoryRelationsOntology -t "Family History Relations Ontology" -codeReplace _,:
 
       - name: Add FHIR code system from Git
-        run: git add rel-fhir.json
+        run: git add kin-fhir.json
 
       - name: Set up Git config
         run: |
@@ -36,13 +41,13 @@ jobs:
 
       - name: Commit FHIR code system
         run: |
-          git diff --exit-code rel-fhir.json
-          if [ $? -eq 1 ]
+          git diff --exit-code kin-fhir.json
+          if [ $? -eq 0 && ${{ env.file_exists }} -eq 1]
           then
-            echo "Commiting FHIR code system because it has changes"
-            git commit -m "Updated FHIR code system"
-          else
             echo "FHIR code system did not change"
+          else
+            echo "Commiting FHIR code system because it didn't exist or it has changes"
+            git commit -m "Updated FHIR code system"
           fi
 
       - name: Push changes

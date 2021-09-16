@@ -1,14 +1,14 @@
-# REL - The Family History Relations Ontology
+# KIN - The Family History Relations Ontology
 
 __IMPORTANT NOTE: The layout and contents of this repository are still under discussion and the artifacts contained in it are in pre-alpha stage.__
 
 ## Availability
 
-The latest version of the ontology can always be found at: [http://purl.org/ga4gh/rel.owl](http://purl.org/ga4gh/rel.owl).
+The latest version of the ontology can always be found at: [http://purl.org/ga4gh/kin.owl](http://purl.org/ga4gh/kin.owl).
 
-## What is REL?
+## What is KIN?
 
-REL is a family relations ontology developed as part of the [Global Alliance for Genomics and Health Pedigree Standard project](https://github.com/GA4GH-Pedigree-Standard). It allows using an OWL reasoner to automatically validate a family history graph and infer new relations.
+KIN is a family relations ontology developed as part of the [Global Alliance for Genomics and Health Pedigree Standard project](https://github.com/GA4GH-Pedigree-Standard). It allows using an OWL reasoner to automatically validate a family history graph and infer new relations.
 
 ## Project Structure
 
@@ -18,7 +18,7 @@ The project contains two main parts:
 
 ## Ontology Design
 
-The REL ontology contains mostly object properties that represent the family relations in a pedigree. No individuals are included in the core ontology and when individuals are required, to implement a test, for example, these are created programmatically and discarded after the test has finished.
+The KIN ontology contains mostly object properties that represent the family relations in a pedigree. No individuals are included in the core ontology and when individuals are required, to implement a test, for example, these are created programmatically and discarded after the test has finished.
 
 ## Contributing
 
