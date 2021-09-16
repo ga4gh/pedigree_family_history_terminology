@@ -29,7 +29,7 @@ class OntologyTest extends AbstractOntologyTest {
 	public void testInvalidRelation() {
 		try {
 			// Add individuals
-			OWLClass person = getNamedClass("REL_998");
+			OWLClass person = getNamedClass("KIN_998");
 			OWLNamedIndividual bart = getNamedIndividual("Bart");
 			OWLNamedIndividual homer = getNamedIndividual("Homer");
 
@@ -37,10 +37,10 @@ class OntologyTest extends AbstractOntologyTest {
 			axioms.add(dataFactory.getOWLClassAssertionAxiom(person, bart));
 			axioms.add(dataFactory.getOWLClassAssertionAxiom(person, homer));
 
-			OWLObjectProperty biologicalParent = getNamedObjectProperty("REL_003");
+			OWLObjectProperty biologicalParent = getNamedObjectProperty("KIN_003");
 			axioms.add(dataFactory.getOWLObjectPropertyAssertionAxiom(biologicalParent, homer, bart));
 
-			OWLObjectProperty biologicalChild = getNamedObjectProperty("REL_032");
+			OWLObjectProperty biologicalChild = getNamedObjectProperty("KIN_032");
 			axioms.add(dataFactory.getOWLObjectPropertyAssertionAxiom(biologicalChild, homer, bart));
 
 			manager.addAxioms(fhOntology, axioms.stream());
@@ -73,7 +73,7 @@ class OntologyTest extends AbstractOntologyTest {
 	public void testGrandparentInference() {
 		try {
 			// Add individuals
-			OWLClass person = getNamedClass("REL_998");
+			OWLClass person = getNamedClass("KIN_998");
 			OWLNamedIndividual bart = getNamedIndividual("Bart");
 			OWLNamedIndividual homer = getNamedIndividual("Homer");
 			OWLNamedIndividual abe = getNamedIndividual("Abe");
@@ -83,7 +83,7 @@ class OntologyTest extends AbstractOntologyTest {
 			axioms.add(dataFactory.getOWLClassAssertionAxiom(person, homer));
 			axioms.add(dataFactory.getOWLClassAssertionAxiom(person, abe));
 
-			OWLObjectProperty biologicalParent = getNamedObjectProperty("REL_003");
+			OWLObjectProperty biologicalParent = getNamedObjectProperty("KIN_003");
 			axioms.add(dataFactory.getOWLObjectPropertyAssertionAxiom(biologicalParent, homer, bart));
 			axioms.add(dataFactory.getOWLObjectPropertyAssertionAxiom(biologicalParent, abe, homer));
 
@@ -97,7 +97,7 @@ class OntologyTest extends AbstractOntologyTest {
 			// Get instances of people
 			NodeSet<OWLNamedIndividual> individuals = reasoner.getInstances(person, true);
 			abe = getNamedIndividual("Abe", individuals);
-			OWLObjectProperty op = getNamedObjectProperty("REL_017");
+			OWLObjectProperty op = getNamedObjectProperty("KIN_017");
 			NodeSet<OWLNamedIndividual> values = getObjectPropertyValues(abe, op);
 
 			// Verify that the reasoner has inferred the grandparent relation between Bart and Abe

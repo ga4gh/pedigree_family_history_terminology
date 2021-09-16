@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
  */
 public abstract class AbstractOntologyTest {
 
-  public static final IRI FH_IRI = IRI.create("http://purl.org/ga4gh/rel.owl#");
+  public static final IRI FH_IRI = IRI.create("http://purl.org/ga4gh/kin.owl#");
 
   protected OWLOntologyManager manager;
   protected OWLOntology fhOntology;
@@ -32,7 +32,7 @@ public abstract class AbstractOntologyTest {
     OntologyTest app = new OntologyTest();
     this.manager = OWLManager.createOWLOntologyManager();
     this.dataFactory = manager.getOWLDataFactory();
-    try (InputStream is = app.getFileFromResourceAsStream("rel.owl")) {
+    try (InputStream is = app.getFileFromResourceAsStream("kin.owl")) {
       this.fhOntology = manager.loadOntologyFromOntologyDocument(is);
     }
     reasoner = reasonerFactory.createReasoner(fhOntology);
