@@ -8,6 +8,8 @@ jobs:
   generate:
     name: Create FHIR Code System
     runs-on: ubuntu-latest
+    env:
+      FILE_EXISTS: 0
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -16,6 +18,11 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 11
+
+      - name: Check file exists
+        run: |
+          ${{env.FILE_EXISTS}} = [ ! -f kin-fhir.json ]
+          echo "File exists: " ${{env.FILE_EXISTS}}
 
       - name: Download FHIR-OWL
         uses: wei/wget@v1
@@ -37,11 +44,11 @@ jobs:
       - name: Commit FHIR code system
         run: |
           git diff --exit-code kin-fhir.json
-          if [ $? -eq 0 ]
+          if [ $? -eq 0 && ${{env.FILE_EXISTS}} -eq 1]
           then
             echo "FHIR code system did not change"
           else
-            echo "Commiting FHIR code system because it has changes"
+            echo "Commiting FHIR code system because it didn't exist or it has changes"
             git commit -m "Updated FHIR code system"
           fi
 
