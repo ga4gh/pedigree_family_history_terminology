@@ -38,15 +38,18 @@ jobs:
           git config --local user.email "358260+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
 
+      - name: Check generated file changed
+        run: |
+          git diff --exit-code kin-fhir.json && echo "file_changed=1" >> $GITHUB_ENV || echo "file_changed=0" >> $GITHUB_ENV
+
       - name: Commit FHIR code system
         run: |
-          git diff --exit-code kin-fhir.json
-          if [ $? -eq 0 && ${{ env.file_exists }} -eq 1]
+          if [ ${{ env.file_changed }} -eq 1 || ${{ env.file_exists }} -eq 0]
           then
-            echo "FHIR code system did not change"
-          else
             echo "Commiting FHIR code system because it didn't exist or it has changes"
             git commit -m "Updated FHIR code system"
+          else
+            echo "FHIR code system did not change"
           fi
 
       - name: Push changes
