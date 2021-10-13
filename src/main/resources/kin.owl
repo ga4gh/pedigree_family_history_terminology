@@ -155,11 +155,12 @@ SymmetricObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_010>)
 TransitiveObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_010>)
 ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_010> <http://purl.org/ga4gh/kin.owl#KIN_998>)
 ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_010> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+DisjointObjectProperties(<http://purl.org/ga4gh/kin.owl#KIN_010> <http://purl.org/ga4gh/kin.owl#KIN_011>)
 
 # Object Property: <http://purl.org/ga4gh/kin.owl#KIN_011> (isPolyzygoticTwin)
 
 AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_011> "isPolyzygoticTwin")
-SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_011> <http://purl.org/ga4gh/kin.owl#KIN_010>)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_011> <http://purl.org/ga4gh/kin.owl#KIN_009>)
 SymmetricObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_011>)
 TransitiveObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_011>)
 ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_011> <http://purl.org/ga4gh/kin.owl#KIN_998>)
