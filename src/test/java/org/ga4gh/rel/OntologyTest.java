@@ -2,6 +2,9 @@ package org.ga4gh.rel;
 
 import org.junit.jupiter.api.Test;
 import org.semanticweb.owlapi.model.*;
+import org.semanticweb.owlapi.profiles.OWL2DLProfile;
+import org.semanticweb.owlapi.profiles.OWLProfileReport;
+import org.semanticweb.owlapi.profiles.OWLProfileViolation;
 import org.semanticweb.owlapi.reasoner.*;
 
 import java.util.HashSet;
@@ -13,6 +16,24 @@ import static org.junit.jupiter.api.Assertions.*;
  * Main class used to define ontology tests.
  */
 class OntologyTest extends AbstractOntologyTest {
+
+	/**
+	 * Tests that the ontology is in the DL profile.
+	 */
+	@Test
+	public void testInDl() {
+		OWL2DLProfile dlp = new OWL2DLProfile();
+		OWLProfileReport report = dlp.checkOntology(fhOntology);
+
+		if (!report.isInProfile()) {
+			System.out.println("The ontology is not in the DL profile and has the following violations:");
+			for (OWLProfileViolation violation : report.getViolations()) {
+				System.out.println(violation);
+			}
+		}
+
+		assertTrue(report.isInProfile());
+	}
 
 	/**
 	 * This test checks that the ontology is inconsistent when an invalid family graph is created. In this case, the
