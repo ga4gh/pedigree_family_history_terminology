@@ -11,6 +11,8 @@ Ontology(<http://purl.org/ga4gh/kin.owl>
 <http://purl.org/ga4gh/rel/releases/2021-08-05/kin.owl>
 Annotation(rdfs:comment "A family relationships ontology."^^xsd:string)
 
+Declaration(Class(<http://purl.org/ga4gh/kin.owl#KIN_991>))
+Declaration(Class(<http://purl.org/ga4gh/kin.owl#KIN_992>))
 Declaration(Class(<http://purl.org/ga4gh/kin.owl#KIN_993>))
 Declaration(Class(<http://purl.org/ga4gh/kin.owl#KIN_994>))
 Declaration(Class(<http://purl.org/ga4gh/kin.owl#KIN_995>))
@@ -344,6 +346,16 @@ SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_047> <http://purl.org/ga4
 ############################
 #   Classes
 ############################
+
+# Class: <http://purl.org/ga4gh/kin.owl#KIN_991> (OtherSex)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_991> "OtherSex"^^rdfs:Literal)
+SubClassOf(<http://purl.org/ga4gh/kin.owl#KIN_991> <http://purl.org/ga4gh/kin.owl#KIN_997>)
+
+# Class: <http://purl.org/ga4gh/kin.owl#KIN_992> (UnknownSex)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_992> "UnknownSex")
+SubClassOf(<http://purl.org/ga4gh/kin.owl#KIN_992> <http://purl.org/ga4gh/kin.owl#KIN_997>)
 
 # Class: <http://purl.org/ga4gh/kin.owl#KIN_993> (Woman)
 
