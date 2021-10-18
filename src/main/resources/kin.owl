@@ -57,6 +57,8 @@ Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_038>))
 Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_039>))
 Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_046>))
 Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_047>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_050>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_051>))
 Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#altLabel>))
 
 ############################
@@ -340,6 +342,23 @@ SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_046> <http://purl.org/ga4
 AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_047> "isGreatGrandchildOf"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://purl.org/ga4gh/kin.owl#KIN_047> "hasGreatGrandparent"^^rdfs:Literal)
 SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_047> <http://purl.org/ga4gh/kin.owl#KIN_002>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_050> (isSeparatedPartnerOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_050> "isSeparatedPartnerOf"@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_050> <http://purl.org/ga4gh/kin.owl#KIN_019>)
+SymmetricObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_050>)
+ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_050> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_050> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_051> (isSeparatedConsanguineousPartnerOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_051> "isSeparatedConsanguineousPartnerOf"@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_051> <http://purl.org/ga4gh/kin.owl#KIN_002>)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_051> <http://purl.org/ga4gh/kin.owl#KIN_050>)
+SymmetricObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_051>)
+ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_051> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_051> <http://purl.org/ga4gh/kin.owl#KIN_998>)
 
 
 
