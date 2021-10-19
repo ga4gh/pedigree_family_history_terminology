@@ -60,6 +60,7 @@ Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_047>))
 Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_050>))
 Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_051>))
 Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#altLabel>))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#definition>))
 
 ############################
 #   Object Properties
@@ -346,6 +347,7 @@ SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_047> <http://purl.org/ga4
 # Object Property: <http://purl.org/ga4gh/kin.owl#KIN_050> (isSeparatedPartnerOf)
 
 AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_050> "isSeparatedPartnerOf"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_050> "A socio-legal relationship between two people who used to live together and share a common domestic life, but have now separated."@en)
 SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_050> <http://purl.org/ga4gh/kin.owl#KIN_019>)
 SymmetricObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_050>)
 ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_050> <http://purl.org/ga4gh/kin.owl#KIN_998>)
@@ -354,6 +356,7 @@ ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_050> <http://purl.org/ga4
 # Object Property: <http://purl.org/ga4gh/kin.owl#KIN_051> (isSeparatedConsanguineousPartnerOf)
 
 AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_051> "isSeparatedConsanguineousPartnerOf"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_051> "A socio-legal relationship between two people who used to live together, share a common domestic life and are closely related biologically (second cousins or closer), and have now separated."@en)
 SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_051> <http://purl.org/ga4gh/kin.owl#KIN_002>)
 SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_051> <http://purl.org/ga4gh/kin.owl#KIN_050>)
 SymmetricObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_051>)
