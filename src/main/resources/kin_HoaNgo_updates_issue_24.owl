@@ -1,0 +1,559 @@
+Prefix(:=<http://ga4gh.org/ontologies/fh.owl>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(ga4gh:=<http://purl.org/ga4gh/rel.owl#>)
+
+
+Ontology(<http://purl.org/ga4gh/kin.owl>
+<http://purl.org/ga4gh/rel/releases/2021-08-05/kin.owl>
+Annotation(rdfs:comment "A family relationships ontology."^^xsd:string)
+
+Declaration(Class(<http://purl.org/ga4gh/kin.owl#KIN_985>))
+Declaration(Class(<http://purl.org/ga4gh/kin.owl#KIN_986>))
+Declaration(Class(<http://purl.org/ga4gh/kin.owl#KIN_987>))
+Declaration(Class(<http://purl.org/ga4gh/kin.owl#KIN_988>))
+Declaration(Class(<http://purl.org/ga4gh/kin.owl#KIN_989>))
+Declaration(Class(<http://purl.org/ga4gh/kin.owl#KIN_990>))
+Declaration(Class(<http://purl.org/ga4gh/kin.owl#KIN_991>))
+Declaration(Class(<http://purl.org/ga4gh/kin.owl#KIN_992>))
+Declaration(Class(<http://purl.org/ga4gh/kin.owl#KIN_993>))
+Declaration(Class(<http://purl.org/ga4gh/kin.owl#KIN_994>))
+Declaration(Class(<http://purl.org/ga4gh/kin.owl#KIN_995>))
+Declaration(Class(<http://purl.org/ga4gh/kin.owl#KIN_996>))
+Declaration(Class(<http://purl.org/ga4gh/kin.owl#KIN_997>))
+Declaration(Class(<http://purl.org/ga4gh/kin.owl#KIN_998>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_001>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_002>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_003>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_004>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_005>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_006>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_007>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_008>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_009>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_010>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_011>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_012>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_013>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_014>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_015>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_016>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_017>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_018>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_019>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_020>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_021>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_022>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_023>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_024>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_025>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_026>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_027>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_028>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_029>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_030>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_031>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_032>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_036>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_038>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_039>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_046>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_047>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_050>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_051>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_052>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_053>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_054>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_055>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_056>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_057>))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#altLabel>))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#definition>))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_001> (isRelativeOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_001> "isRelativeOf"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_001> "A relation that indicates that a person is connected to another biologically or through a socio-legal relationship."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_001> owl:topObjectProperty)
+SymmetricObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_001>)
+TransitiveObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_001>)
+ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_001> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_001> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_002> (isBiologicalRelativeOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_002> "isBiologicalRelativeOf"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_002> "A relation that indicates that a person is related to another person biologically."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_002> <http://purl.org/ga4gh/kin.owl#KIN_001>)
+SymmetricObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_002>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_003> (isBiologicalParentOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_003> "isBiologicalParentOf"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://purl.org/ga4gh/kin.owl#KIN_003> "hasBiologicalChild"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_003> "A relation that indicates that a person is the biological parent of another person.")
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_003> <http://purl.org/ga4gh/kin.owl#KIN_002>)
+InverseObjectProperties(<http://purl.org/ga4gh/kin.owl#KIN_003> <http://purl.org/ga4gh/kin.owl#KIN_032>)
+ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_003> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_003> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+DisjointObjectProperties(<http://purl.org/ga4gh/kin.owl#KIN_003> <http://purl.org/ga4gh/kin.owl#KIN_032>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_004> (isSpermDonorOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_004> "isSpermDonorOf")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_004> "A relation between a man who donated his sperm and the child."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_004> <http://purl.org/ga4gh/kin.owl#KIN_003>)
+ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_004> <http://purl.org/ga4gh/kin.owl#KIN_994>)
+ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_004> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_005> (isGestationalCarrierOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_005> "isGestationalCarrierOf")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_005> "A relation between the woman who carried a fertilised egg in her womb and gave birth to a child on behalf of the mother, and the child."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_005> <http://purl.org/ga4gh/kin.owl#KIN_001>)
+InverseObjectProperties(<http://purl.org/ga4gh/kin.owl#KIN_005> <http://purl.org/ga4gh/kin.owl#KIN_039>)
+FunctionalObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_005>)
+ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_005> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_005> <http://purl.org/ga4gh/kin.owl#KIN_993>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_006> (isSurrogateOvumDonorOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_006> "isSurrogateOvumDonorOf")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_006> "A relation between the woman who carried her fertilised egg in her womb and gave birth to a child on behalf of the mother, and the child."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_006> <http://purl.org/ga4gh/kin.owl#KIN_005>)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_006> <http://purl.org/ga4gh/kin.owl#KIN_038>)
+FunctionalObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_006>)
+ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_006> <http://purl.org/ga4gh/kin.owl#KIN_993>)
+ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_006> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_007> (isBiologicalSiblingOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_007> "isBiologicalSiblingOf")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_007> "A relation between two people that have one or both biological parents in common."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_007> <http://purl.org/ga4gh/kin.owl#KIN_002>)
+SymmetricObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_007>)
+TransitiveObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_007>)
+ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_007> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_007> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_008> (isFullSiblingOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_008> "isFullSiblingOf")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_008> "A relation between two people that have both biological parents in common."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_008> <http://purl.org/ga4gh/kin.owl#KIN_007>)
+SymmetricObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_008>)
+TransitiveObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_008>)
+ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_008> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_008> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_009> (isTwinOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_009> "isTwinOf")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_009> "A relation between two people born at the same birth."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_009> <http://purl.org/ga4gh/kin.owl#KIN_008>)
+SymmetricObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_009>)
+TransitiveObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_009>)
+ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_009> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_009> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_010> (isMonozygoticTwinOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_010> "isMonozygoticTwinOf")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_010> "A relation between two people born at the same birth from a single fertilised ovum that splits."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_010> <http://purl.org/ga4gh/kin.owl#KIN_009>)
+SymmetricObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_010>)
+TransitiveObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_010>)
+ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_010> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_010> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_011> (isPolyzygoticTwinOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_011> "isPolyzygoticTwinOf")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_011> "A relation between two people born at the same birth from fertilisation of more than two ovums discharged in a single ovarian cycle."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_011> <http://purl.org/ga4gh/kin.owl#KIN_009>)
+SymmetricObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_011>)
+TransitiveObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_011>)
+ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_011> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_011> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_012> (isHalfSiblingOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_012> "isHalfSiblingOf")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_012> "A relation between two people that have a single biological parent in common."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_012> <http://purl.org/ga4gh/kin.owl#KIN_007>)
+SymmetricObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_012>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_013> (isParentalSiblingOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_013> "isParentalSiblingOf")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_013> "A relation that indicates that a person is the sibling of a parent of another person."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_013> <http://purl.org/ga4gh/kin.owl#KIN_002>)
+InverseObjectProperties(<http://purl.org/ga4gh/kin.owl#KIN_013> <http://purl.org/ga4gh/kin.owl#KIN_046>)
+ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_013> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_013> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_014> (isCousinOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_014> "isCousinOf")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_014> "A relation between a person and a child of that person's uncle or aunt."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_014> <http://purl.org/ga4gh/kin.owl#KIN_002>)
+SymmetricObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_014>)
+ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_014> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_014> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_015> (isMaternalCousinOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_015> "isMaternalCousinOf")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_015> "A relation between a person and a child of that person's aunt."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_015> <http://purl.org/ga4gh/kin.owl#KIN_014>)
+SymmetricObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_015>)
+ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_015> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_015> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_016> (isPaternalCousinOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_016> "isPaternalCousinOf")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_016> "A relation between a person and a child of that person's uncle."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_016> <http://purl.org/ga4gh/kin.owl#KIN_014>)
+SymmetricObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_016>)
+ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_016> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_016> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_017> (isGrandparentOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_017> "isGrandparentOf")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://purl.org/ga4gh/kin.owl#KIN_017> "hasGrandchild"^^rdfs:Literal)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_017> "A relation between a person and a child of that person's child."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_017> <http://purl.org/ga4gh/kin.owl#KIN_002>)
+InverseObjectProperties(<http://purl.org/ga4gh/kin.owl#KIN_017> <http://purl.org/ga4gh/kin.owl#KIN_036>)
+ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_017> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_017> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_018> (isGreatGrandparentOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_018> "isGreatGrandparentOf")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_018> "A relation between a person and a child of that person's grandchild."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_018> <http://purl.org/ga4gh/kin.owl#KIN_002>)
+InverseObjectProperties(<http://purl.org/ga4gh/kin.owl#KIN_018> <http://purl.org/ga4gh/kin.owl#KIN_047>)
+ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_018> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_018> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_019> (isSocialLegalRelativeOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_019> "isSocialLegalRelativeOf")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_019> "A social or legal relationship between two people, for example, an adoptive parent."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_019> <http://purl.org/ga4gh/kin.owl#KIN_001>)
+SymmetricObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_019>)
+ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_019> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_019> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_020> (isParentFigureOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_020> "isParentFigureOf")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_020> "A relation between a person who is regarded as having all or some of the characteristics of a parent and the child."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_020> <http://purl.org/ga4gh/kin.owl#KIN_019>)
+ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_020> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_020> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_021> (isFosterParentOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_021> "isFosterParentOf")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_021> "A relation between a person and a child that temporarily enters into his or her family for a period of time, without becoming the child's legal parent."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_021> <http://purl.org/ga4gh/kin.owl#KIN_020>)
+ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_021> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_021> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_022> (isAdoptiveParentOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_022> "isAdoptiveParentOf")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_022> "A legal relation between a person and a child that is adopted by that person. The adopted child is given the rights, privileges, and duties of a biological child by the adoptive person."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_022> <http://purl.org/ga4gh/kin.owl#KIN_020>)
+ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_022> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_022> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_023> (isStepParentOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_023> "isStepParentOf")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_023> "A relation between a person and a child, where the person is married to the father or mother of a child but who is not that child's own father or mother."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_023> <http://purl.org/ga4gh/kin.owl#KIN_020>)
+ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_023> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_023> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_024> (isSiblingFigureOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_024> "isSiblingFigureOf")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_024> "A relation between two people that has all or some of the characteristics of a sibling relationship."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_024> <http://purl.org/ga4gh/kin.owl#KIN_019>)
+ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_024> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_024> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_025> (isStepSiblingOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_025> "isStepSiblingOf")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_025> "A relation between children born of two different families who have been joined by marriage, defacto or otherwise, of at least one of their respective parents."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_025> <http://purl.org/ga4gh/kin.owl#KIN_024>)
+SymmetricObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_025>)
+ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_025> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_025> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_026> (isPartnerOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_026> "isPartnerOf")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_026> "A socio-legal relationship between two people who live together and share a common domestic life."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_026> <http://purl.org/ga4gh/kin.owl#KIN_019>)
+SymmetricObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_026>)
+ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_026> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_026> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_027> (isBiologicalMotherOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_027> "isBiologicalMotherOf")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_027> "A relation that indicates that a person is the biological mother of another person."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_027> <http://purl.org/ga4gh/kin.owl#KIN_003>)
+FunctionalObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_027>)
+ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_027> <http://purl.org/ga4gh/kin.owl#KIN_993>)
+ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_027> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_028> (isBiologicalFatherOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_028> "isBiologicalFatherOf")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_028> "A relation that indicates that a person is the biological father of another person."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_028> <http://purl.org/ga4gh/kin.owl#KIN_003>)
+FunctionalObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_028>)
+ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_028> <http://purl.org/ga4gh/kin.owl#KIN_994>)
+ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_028> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_029> (isMitochondrialDonorOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_029> "isMitochondrialDonorOf")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_029> "A relation between a woman that has donated mitochondria and a child. Mitochondrial donation involves removing the nuclear DNA from a woman’s ovum containing faulty mitochondria and inserting it into a healthy donor ovum, which has had its nuclear DNA removed."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_029> <http://purl.org/ga4gh/kin.owl#KIN_001>)
+FunctionalObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_029>)
+ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_029> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_029> <http://purl.org/ga4gh/kin.owl#KIN_993>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_030> (isConsanguineousPartnerOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_030> "isConsanguineousPartnerOf")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_030> "A socio-legal relationship between two people who live together, share a common domestic life and are closely related biologically (second cousins or closer)."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_030> <http://purl.org/ga4gh/kin.owl#KIN_002>)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_030> <http://purl.org/ga4gh/kin.owl#KIN_026>)
+SymmetricObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_030>)
+ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_030> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_030> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_031> (hasSex)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_031> "hasSex"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_031> "A relation used to indicate the sex of a person."@en)
+FunctionalObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_031>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_032> (isBiologicalChildOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_032> "isBiologicalChildOf"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_032> "A relation that indicates that a person is the biological child of another person."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_032> <http://purl.org/ga4gh/kin.owl#KIN_002>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_036> (isGrandchildOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_036> "isGrandchildOf"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://purl.org/ga4gh/kin.owl#KIN_036> "hasGrandparent"^^rdfs:Literal)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_036> "A relation between a person and a parent of that person's parent."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_036> <http://purl.org/ga4gh/kin.owl#KIN_002>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_038> (isOvumDonorOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_038> "isOvumDonorOf"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_038> "A relation between a fertile woman who donated an egg to another woman to help her conceive and the child."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_038> <http://purl.org/ga4gh/kin.owl#KIN_003>)
+ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_038> <http://purl.org/ga4gh/kin.owl#KIN_993>)
+ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_038> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_039> (hasGestationalCarrier)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_039> "hasGestationalCarrier"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_039> "A relation between the child and a woman who carried a fertilised egg in her womb and gave birth to a child on behalf of the mother."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_039> <http://purl.org/ga4gh/kin.owl#KIN_001>)
+FunctionalObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_039>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_046> (hasParentalSibling)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_046> "hasParentalSibling"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_046> "A relation that indicates that a person has a parental sibling relationship with another person, i.e., the other person is the sibling of a parent."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_046> <http://purl.org/ga4gh/kin.owl#KIN_002>)
+ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_046> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_046> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_047> (isGreatGrandchildOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_047> "isGreatGrandchildOf"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://purl.org/ga4gh/kin.owl#KIN_047> "hasGreatGrandparent"^^rdfs:Literal)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_047> "A relation between a person and a parent of that person's grandparent."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_047> <http://purl.org/ga4gh/kin.owl#KIN_002>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_050> (isSeparatedPartnerOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_050> "isSeparatedPartnerOf"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_050> "A socio-legal relationship between two people who used to live together and share a common domestic life, but have now separated."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_050> <http://purl.org/ga4gh/kin.owl#KIN_019>)
+SymmetricObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_050>)
+ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_050> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_050> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_051> (isSeparatedConsanguineousPartnerOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_051> "isSeparatedConsanguineousPartnerOf"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_051> "A socio-legal relationship between two people who used to live together, share a common domestic life and are closely related biologically (second cousins or closer), and have now separated."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_051> <http://purl.org/ga4gh/kin.owl#KIN_002>)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_051> <http://purl.org/ga4gh/kin.owl#KIN_050>)
+SymmetricObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_051>)
+ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_051> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_051> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_052> (isMaternalGrandparentOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_052> "isMaternalGrandparentOf")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_052> "A relation between a person and a child of that person's daughter.")
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_052> <http://purl.org/ga4gh/kin.owl#KIN_017>)
+ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_052> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_052> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_053> (isPaternalGrandparentOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_053> "isPaternalGrandparentOf")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_053> "A relation between a person and a child of that person's son.")
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_053> <http://purl.org/ga4gh/kin.owl#KIN_017>)
+ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_053> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_053> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_054> (isMaternalHalfSiblingOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_054> "isMaternalHalfSiblingOf")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_054> "A relation between two people that share the same biological mother.")
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_054> <http://purl.org/ga4gh/kin.owl#KIN_012>)
+SymmetricObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_054>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_055> (isPaternalHalfSiblingOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_055> "isPaternalHalfSiblingOf")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_055> "A relation between two people that share the same biological father.")
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_055> <http://purl.org/ga4gh/kin.owl#KIN_012>)
+SymmetricObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_055>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_056> (isMaternalStepSiblingOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_056> "isMaternalStepSiblingOf")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_056> "A relation between children born of two different families who have been joined by marriage, defacto or otherwise. One is a biological child and the other is a step child of the same woman.")
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_056> <http://purl.org/ga4gh/kin.owl#KIN_025>)
+
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_057> (isPaternalStepSiblingOf)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_057> "isPaternalStepSiblingOf")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_057> "A relation between children born of two different families who have been joined by marriage, defacto or otherwise. One is a biological child and the other is a step child of the same man.")
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_057> <http://purl.org/ga4gh/kin.owl#KIN_025>)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.org/ga4gh/kin.owl#KIN_985> (MaternalUncle)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_985> "MaternalUncle")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_985> "A brother of someone's mother")
+EquivalentClasses(<http://purl.org/ga4gh/kin.owl#KIN_985> ObjectIntersectionOf(<http://purl.org/ga4gh/kin.owl#KIN_994> ObjectSomeValuesFrom(<http://purl.org/ga4gh/kin.owl#KIN_046> ObjectSomeValuesFrom(<http://purl.org/ga4gh/kin.owl#KIN_027> <http://purl.org/ga4gh/kin.owl#KIN_998>))))
+
+# Class: <http://purl.org/ga4gh/kin.owl#KIN_986> (PaternalUncle)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_986> "PaternalUncle")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_986> "A brother of someone's father")
+EquivalentClasses(<http://purl.org/ga4gh/kin.owl#KIN_986> ObjectIntersectionOf(<http://purl.org/ga4gh/kin.owl#KIN_994> ObjectSomeValuesFrom(<http://purl.org/ga4gh/kin.owl#KIN_046> ObjectSomeValuesFrom(<http://purl.org/ga4gh/kin.owl#KIN_028> <http://purl.org/ga4gh/kin.owl#KIN_998>))))
+
+# Class: <http://purl.org/ga4gh/kin.owl#KIN_987> (MaternalAunt)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_987> "MaternalAunt")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_987> "A sister of someone's mother")
+EquivalentClasses(<http://purl.org/ga4gh/kin.owl#KIN_987> ObjectIntersectionOf(<http://purl.org/ga4gh/kin.owl#KIN_993> ObjectSomeValuesFrom(<http://purl.org/ga4gh/kin.owl#KIN_046> ObjectSomeValuesFrom(<http://purl.org/ga4gh/kin.owl#KIN_027> <http://purl.org/ga4gh/kin.owl#KIN_998>))))
+
+# Class: <http://purl.org/ga4gh/kin.owl#KIN_988> (PaternalAunt)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_988> "PaternalAunt")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_988> "A sister of someone's father")
+EquivalentClasses(<http://purl.org/ga4gh/kin.owl#KIN_988> ObjectIntersectionOf(<http://purl.org/ga4gh/kin.owl#KIN_993> ObjectSomeValuesFrom(<http://purl.org/ga4gh/kin.owl#KIN_046> ObjectSomeValuesFrom(<http://purl.org/ga4gh/kin.owl#KIN_028> <http://purl.org/ga4gh/kin.owl#KIN_998>))))
+
+# Class: <http://purl.org/ga4gh/kin.owl#KIN_989> (MaternalGrandparent)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_989> "MaternalGrandparent")
+EquivalentClasses(<http://purl.org/ga4gh/kin.owl#KIN_989> ObjectIntersectionOf(<http://purl.org/ga4gh/kin.owl#KIN_998> ObjectSomeValuesFrom(<http://purl.org/ga4gh/kin.owl#KIN_052> <http://purl.org/ga4gh/kin.owl#KIN_998>)))
+
+# Class: <http://purl.org/ga4gh/kin.owl#KIN_990> (PaternalGrandparent)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_990> "PaternalGrandparent")
+EquivalentClasses(<http://purl.org/ga4gh/kin.owl#KIN_990> ObjectIntersectionOf(<http://purl.org/ga4gh/kin.owl#KIN_998> ObjectSomeValuesFrom(<http://purl.org/ga4gh/kin.owl#KIN_053> <http://purl.org/ga4gh/kin.owl#KIN_998>)))
+
+# Class: <http://purl.org/ga4gh/kin.owl#KIN_991> (OtherSex)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_991> "OtherSex"^^rdfs:Literal)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_991> "It is not possible to accurately assess the applicability of male or female."@en)
+SubClassOf(<http://purl.org/ga4gh/kin.owl#KIN_991> <http://purl.org/ga4gh/kin.owl#KIN_997>)
+
+# Class: <http://purl.org/ga4gh/kin.owl#KIN_992> (UnknownSex)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_992> "UnknownSex")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_992> "Not assessed or not available."@en)
+SubClassOf(<http://purl.org/ga4gh/kin.owl#KIN_992> <http://purl.org/ga4gh/kin.owl#KIN_997>)
+
+# Class: <http://purl.org/ga4gh/kin.owl#KIN_993> (Woman)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_993> "Woman")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_993> "A female person."@en)
+EquivalentClasses(<http://purl.org/ga4gh/kin.owl#KIN_993> ObjectIntersectionOf(<http://purl.org/ga4gh/kin.owl#KIN_998> ObjectSomeValuesFrom(<http://purl.org/ga4gh/kin.owl#KIN_031> <http://purl.org/ga4gh/kin.owl#KIN_995>)))
+
+# Class: <http://purl.org/ga4gh/kin.owl#KIN_994> (Man)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_994> "Man")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_994> "A male person."@en)
+EquivalentClasses(<http://purl.org/ga4gh/kin.owl#KIN_994> ObjectIntersectionOf(<http://purl.org/ga4gh/kin.owl#KIN_998> ObjectSomeValuesFrom(<http://purl.org/ga4gh/kin.owl#KIN_031> <http://purl.org/ga4gh/kin.owl#KIN_996>)))
+
+# Class: <http://purl.org/ga4gh/kin.owl#KIN_995> (Female)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_995> "Female")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_995> "Female sex."@en)
+SubClassOf(<http://purl.org/ga4gh/kin.owl#KIN_995> <http://purl.org/ga4gh/kin.owl#KIN_997>)
+DisjointClasses(<http://purl.org/ga4gh/kin.owl#KIN_995> <http://purl.org/ga4gh/kin.owl#KIN_996>)
+
+# Class: <http://purl.org/ga4gh/kin.owl#KIN_996> (Male)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_996> "Male")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_996> "Male sex."@en)
+SubClassOf(<http://purl.org/ga4gh/kin.owl#KIN_996> <http://purl.org/ga4gh/kin.owl#KIN_997>)
+
+# Class: <http://purl.org/ga4gh/kin.owl#KIN_997> (Sex)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_997> "Sex")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_997> "Represents the sex of a person."@en)
+EquivalentClasses(<http://purl.org/ga4gh/kin.owl#KIN_997> ObjectUnionOf(<http://purl.org/ga4gh/kin.owl#KIN_995> <http://purl.org/ga4gh/kin.owl#KIN_996>))
+DisjointClasses(<http://purl.org/ga4gh/kin.owl#KIN_997> <http://purl.org/ga4gh/kin.owl#KIN_998>)
+
+# Class: <http://purl.org/ga4gh/kin.owl#KIN_998> (Person)
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_998> "Person")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_998> "A human being."@en)
+
+
+SubObjectPropertyOf(ObjectPropertyChain(<http://purl.org/ga4gh/kin.owl#KIN_003> <http://purl.org/ga4gh/kin.owl#KIN_003>) <http://purl.org/ga4gh/kin.owl#KIN_017>)
+SubObjectPropertyOf(ObjectPropertyChain(<http://purl.org/ga4gh/kin.owl#KIN_003> <http://purl.org/ga4gh/kin.owl#KIN_007> <http://purl.org/ga4gh/kin.owl#KIN_032>) <http://purl.org/ga4gh/kin.owl#KIN_014>)
+SubObjectPropertyOf(ObjectPropertyChain(<http://purl.org/ga4gh/kin.owl#KIN_003> <http://purl.org/ga4gh/kin.owl#KIN_027>) <http://purl.org/ga4gh/kin.owl#KIN_052>)
+SubObjectPropertyOf(ObjectPropertyChain(<http://purl.org/ga4gh/kin.owl#KIN_003> <http://purl.org/ga4gh/kin.owl#KIN_028>) <http://purl.org/ga4gh/kin.owl#KIN_053>)
+SubObjectPropertyOf(ObjectPropertyChain(<http://purl.org/ga4gh/kin.owl#KIN_017> <http://purl.org/ga4gh/kin.owl#KIN_003>) <http://purl.org/ga4gh/kin.owl#KIN_018>)
+SubObjectPropertyOf(ObjectPropertyChain(<http://purl.org/ga4gh/kin.owl#KIN_027> <http://purl.org/ga4gh/kin.owl#KIN_007> <http://purl.org/ga4gh/kin.owl#KIN_032>) <http://purl.org/ga4gh/kin.owl#KIN_015>)
+SubObjectPropertyOf(ObjectPropertyChain(<http://purl.org/ga4gh/kin.owl#KIN_028> <http://purl.org/ga4gh/kin.owl#KIN_007> <http://purl.org/ga4gh/kin.owl#KIN_032>) <http://purl.org/ga4gh/kin.owl#KIN_016>)
+)
