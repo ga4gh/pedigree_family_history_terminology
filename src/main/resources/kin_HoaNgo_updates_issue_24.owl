@@ -143,9 +143,9 @@ TransitiveObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_007>)
 ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_007> <http://purl.org/ga4gh/kin.owl#KIN_998>)
 ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_007> <http://purl.org/ga4gh/kin.owl#KIN_998>)
 
-# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_008> (isFullsiblingOf)
+# Object Property: <http://purl.org/ga4gh/kin.owl#KIN_008> (isFullSiblingOf)
 
-AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_008> "isFullsiblingOf")
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_008> "isFullSiblingOf")
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_008> "A relation between two people that have both biological parents in common."@en)
 SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_008> <http://purl.org/ga4gh/kin.owl#KIN_007>)
 SymmetricObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_008>)
