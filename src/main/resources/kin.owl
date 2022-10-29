@@ -114,7 +114,7 @@ AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_005> "isGestat
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_005> "A relation between the woman who carried a fertilised egg in her womb and gave birth to a child on behalf of the mother, and the child."@en)
 SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_005> <http://purl.org/ga4gh/kin.owl#KIN_001>)
 InverseObjectProperties(<http://purl.org/ga4gh/kin.owl#KIN_005> <http://purl.org/ga4gh/kin.owl#KIN_039>)
-FunctionalObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_005>)
+InverseFunctionalObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_005>)
 ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_005> <http://purl.org/ga4gh/kin.owl#KIN_993>)
 
 # Object Property: <http://purl.org/ga4gh/kin.owl#KIN_006> (isSurrogateOvumDonorOf)
@@ -123,7 +123,7 @@ AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_006> "isSurrog
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_006> "A relation between the woman who carried her fertilised egg in her womb and gave birth to a child on behalf of the mother, and the child."@en)
 SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_006> <http://purl.org/ga4gh/kin.owl#KIN_005>)
 SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_006> <http://purl.org/ga4gh/kin.owl#KIN_038>)
-FunctionalObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_006>)
+InverseFunctionalObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_006>)
 ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_006> <http://purl.org/ga4gh/kin.owl#KIN_993>)
 
 # Object Property: <http://purl.org/ga4gh/kin.owl#KIN_007> (isBiologicalSiblingOf)
@@ -272,7 +272,7 @@ SymmetricObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_026>)
 AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_027> "isBiologicalMotherOf"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_027> "A relation that indicates that a person is the biological mother of another person."@en)
 SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_027> <http://purl.org/ga4gh/kin.owl#KIN_003>)
-FunctionalObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_027>)
+InverseFunctionalObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_027>)
 ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_027> <http://purl.org/ga4gh/kin.owl#KIN_993>)
 
 # Object Property: <http://purl.org/ga4gh/kin.owl#KIN_028> (isBiologicalFatherOf)
@@ -280,7 +280,7 @@ ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_027> <http://purl.org/ga
 AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_028> "isBiologicalFatherOf"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_028> "A relation that indicates that a person is the biological father of another person."@en)
 SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_028> <http://purl.org/ga4gh/kin.owl#KIN_003>)
-FunctionalObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_028>)
+InverseFunctionalObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_028>)
 ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_028> <http://purl.org/ga4gh/kin.owl#KIN_994>)
 
 # Object Property: <http://purl.org/ga4gh/kin.owl#KIN_029> (isMitochondrialDonorOf)
