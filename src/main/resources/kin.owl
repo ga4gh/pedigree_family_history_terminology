@@ -132,7 +132,6 @@ AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_007> "isBiolog
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_007> "A relation between two people that have one or both biological parents in common."@en)
 SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_007> <http://purl.org/ga4gh/kin.owl#KIN_002>)
 SymmetricObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_007>)
-TransitiveObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_007>)
 
 # Object Property: <http://purl.org/ga4gh/kin.owl#KIN_008> (isFullSiblingOf)
 
