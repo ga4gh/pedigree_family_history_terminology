@@ -287,8 +287,8 @@ ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_028> <http://purl.org/ga
 AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_029> "isMitochondrialDonorOf"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_029> "A relation between a woman that has donated mitochondria and a child. Mitochondrial donation involves removing the nuclear DNA from a woman’s ovum containing faulty mitochondria and inserting it into a healthy donor ovum, which has had its nuclear DNA removed."@en)
 SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_029> <http://purl.org/ga4gh/kin.owl#KIN_001>)
-FunctionalObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_029>)
-ObjectPropertyRange(<http://purl.org/ga4gh/kin.owl#KIN_029> <http://purl.org/ga4gh/kin.owl#KIN_993>)
+InverseFunctionalObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_029>)
+ObjectPropertyDomain(<http://purl.org/ga4gh/kin.owl#KIN_029> <http://purl.org/ga4gh/kin.owl#KIN_993>)
 
 # Object Property: <http://purl.org/ga4gh/kin.owl#KIN_030> (isConsanguineousPartnerOf)
 
