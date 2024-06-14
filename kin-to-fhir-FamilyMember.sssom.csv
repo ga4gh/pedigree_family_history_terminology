@@ -1,0 +1,48 @@
+subject_id,subject_label,predicate_id,object_id,object_label
+KIN:032,isBiologicalChildOf,skos:closeMatch,CHILD,child
+KIN:009,isMultipleBirthSiblingOf,skos:closeMatch,TWIN,twin
+KIN:010,isMonozygoticMultipleBirthSiblingOf,skos:exactMatch,ITWIN,identical twin
+KIN:011,isPolyzygoticMultipleBirthSiblingOf,skos:exactMatch,FTWIN,fraternal twin
+KIN:008,isFullsiblingOf,skos:closeMatch,NSIB,natural sibling
+KIN:012,isHalfSiblingOf,skos:exactMatch,HSIB,half-sibling
+KIN:007,isBiologicalSiblingOf,skos:closeMatch,SIB,sibling
+KIN:025,isStepSiblingOf,skos:exactMatch,STPSIB,step sibling
+KIN:024,isSiblingFigureOf,skos:broadMatch,SIB,sibling
+KIN:054,isMaternalHalfSiblingOf,skos:closeMatch,HSIB,half-sibling
+KIN:055,isPaternalHalfSiblingOf,skos:closeMatch,HSIB,half-sibling
+KIN:056,isMaternalStepSiblingOf,skos:closeMatch,STPSIB,step sibling
+KIN:057,isPaternalStepSiblingOf,skos:closeMatch,STPSIB,step sibling
+KIN:013,isParentalSiblingOf,skos:closeMatch,AUNT,aunt
+KIN:013,isParentalSiblingOf,skos:closeMatch,UNCLE,uncle
+KIN:046,hasParentalSibling,skos:closeMatch,AUNT,aunt
+KIN:046,hasParentalSibling,skos:closeMatch,UNCLE,uncle
+KIN:058,isMaternalUncleOf,skos:exactMatch,MUNCLE,maternal uncle
+KIN:059,isPaternalUncleOf,skos:exactMatch,PUNCLE,paternal uncle
+KIN:060,isMaternalAuntOf,skos:exactMatch,MAUNT,maternal aunt
+KIN:061,isPaternalAuntOf,skos:exactMatch,PAUNT,paternal aunt
+KIN:014,isCousinOf,skos:exactMatch,COUSN,cousin
+KIN:015,isMaternalCousinOf,skos:exactMatch,MCOUSN,maternal cousin
+KIN:016,isPaternalCousinOf,skos:exactMatch,PCOUSN,paternal cousin
+KIN:017,isGrandparentOf,skos:exactMatch,GRPRN,grandparent
+KIN:018,isGreatGrandparentOf,skos:exactMatch,GGRPRN,great grandparent
+KIN:052,isMaternalGrandparentOf,skos:exactMatch,MGRPRN,maternal grandparent
+KIN:053,isPaternalGrandparentOf,skos:exactMatch,PGRPRN,paternal grandparent
+KIN:036,isGrandchildOf,skos:exactMatch,GRNDCHILD,grandchild
+KIN:047,isGreatGrandchildOf,skos:broadMatch,GRNDCHILD,grandchild
+KIN:026,isPartnerOf,skos:closeMatch,DOMPART,domestic partner
+KIN:026,isPartnerOf,skos:closeMatch,SPS,spouse
+KIN:026,isPartnerOf,skos:closeMatch,SIGOTHR,significant other
+KIN:021,isFosterParentOf,skos:exactMatch,PRNFOST,foster parent
+KIN:022,isAdoptiveParentOf,skos:exactMatch,ADOPTP,adoptive parent
+KIN:023,isStepParentOf,skos:exactMatch,STPPRN,step parent
+KIN:027,isBiologicalMotherOf,skos:closeMatch,NMTH,natural mother 
+KIN:028,isBiologicalFatherOf,skos:closeMatch,NFTH,natural father
+KIN:004,isSpermDonorOf,skos:broadMatch,NFTH,natural father
+KIN:038,isOvumDonorOf,skos:broadMatch,NMTH,natural mother
+KIN:005,isGestationalCarrierOf,skos:closeMatch,GESTM,gestational mother
+KIN:001,isRelativeOf,skos:broadMatch,FAMMEMB,family member
+KIN:002,isBiologicalRelativeOf,skos:broadMatch,FAMMEMB,family member
+KIN:019,isSocialLegalRelativeOf,skos:broadMatch,FAMMEMB,family member
+KIN:003,isBiologicalParentOf,skos:closeMatch,NPRN,natural parent
+KIN:020,isParentFigureOf,skos:closeMatch,PRN,parent
+KIN:006,isSurrogateOvumDonorOf,skos:broadMatch,NMTH,natural mother
