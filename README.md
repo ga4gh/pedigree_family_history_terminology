@@ -20,6 +20,10 @@ The project contains two main parts:
 
 The KIN ontology contains mostly object properties that represent the family relations in a pedigree. No individuals are included in the core ontology and when individuals are required, to implement a test, for example, these are created programmatically and discarded after the test has finished.
 
+## Mappings
+
+Preliminary mappings are in the [mappings/](mappings/) directory.
+
 ## Contributing
 
 The main requirement to run the project locally is to have Maven installed.
