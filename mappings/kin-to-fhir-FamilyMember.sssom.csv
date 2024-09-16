@@ -8,14 +8,14 @@ KIN:012,isHalfSiblingOf,skos:exactMatch,HSIB,half-sibling
 KIN:007,isBiologicalSiblingOf,skos:closeMatch,SIB,sibling
 KIN:025,isStepSiblingOf,skos:exactMatch,STPSIB,step sibling
 KIN:024,isSiblingFigureOf,skos:broadMatch,SIB,sibling
-KIN:054,isMaternalHalfSiblingOf,skos:closeMatch,HSIB,half-sibling
-KIN:055,isPaternalHalfSiblingOf,skos:closeMatch,HSIB,half-sibling
-KIN:056,isMaternalStepSiblingOf,skos:closeMatch,STPSIB,step sibling
-KIN:057,isPaternalStepSiblingOf,skos:closeMatch,STPSIB,step sibling
-KIN:013,isParentalSiblingOf,skos:closeMatch,AUNT,aunt
-KIN:013,isParentalSiblingOf,skos:closeMatch,UNCLE,uncle
-KIN:046,hasParentalSibling,skos:closeMatch,AUNT,aunt
-KIN:046,hasParentalSibling,skos:closeMatch,UNCLE,uncle
+KIN:054,isMaternalHalfSiblingOf,skos:broadMatch,HSIB,half-sibling
+KIN:055,isPaternalHalfSiblingOf,skos:broadMatch,HSIB,half-sibling
+KIN:056,isMaternalStepSiblingOf,skos:broadMatch,STPSIB,step sibling
+KIN:057,isPaternalStepSiblingOf,skos:broadMatch,STPSIB,step sibling
+KIN:013,isParentalSiblingOf,skos:narrowMatch,AUNT,aunt
+KIN:013,isParentalSiblingOf,skos:narrowMatch,UNCLE,uncle
+KIN:046,hasParentalSibling,skos:narrowMatch,AUNT,aunt
+KIN:046,hasParentalSibling,skos:narrowMatch,UNCLE,uncle
 KIN:058,isMaternalUncleOf,skos:exactMatch,MUNCLE,maternal uncle
 KIN:059,isPaternalUncleOf,skos:exactMatch,PUNCLE,paternal uncle
 KIN:060,isMaternalAuntOf,skos:exactMatch,MAUNT,maternal aunt
