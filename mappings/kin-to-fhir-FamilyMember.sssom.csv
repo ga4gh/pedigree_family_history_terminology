@@ -12,38 +12,41 @@ KIN:054,isMaternalHalfSiblingOf,skos:broadMatch,HSIB,half-sibling
 KIN:055,isPaternalHalfSiblingOf,skos:broadMatch,HSIB,half-sibling
 KIN:056,isMaternalStepSiblingOf,skos:broadMatch,STPSIB,step sibling
 KIN:057,isPaternalStepSiblingOf,skos:broadMatch,STPSIB,step sibling
-KIN:013,isParentalSiblingOf,skos:narrowMatch,AUNT,aunt
-KIN:013,isParentalSiblingOf,skos:narrowMatch,UNCLE,uncle
-KIN:046,hasParentalSibling,skos:narrowMatch,AUNT,aunt
-KIN:046,hasParentalSibling,skos:narrowMatch,UNCLE,uncle
-KIN:058,isMaternalUncleOf,skos:exactMatch,MUNCLE,maternal uncle
-KIN:059,isPaternalUncleOf,skos:exactMatch,PUNCLE,paternal uncle
-KIN:060,isMaternalAuntOf,skos:exactMatch,MAUNT,maternal aunt
-KIN:061,isPaternalAuntOf,skos:exactMatch,PAUNT,paternal aunt
-KIN:014,isCousinOf,skos:exactMatch,COUSN,cousin
-KIN:015,isMaternalCousinOf,skos:exactMatch,MCOUSN,maternal cousin
-KIN:016,isPaternalCousinOf,skos:exactMatch,PCOUSN,paternal cousin
-KIN:017,isGrandparentOf,skos:exactMatch,GRPRN,grandparent
-KIN:018,isGreatGrandparentOf,skos:exactMatch,GGRPRN,great grandparent
-KIN:052,isMaternalGrandparentOf,skos:exactMatch,MGRPRN,maternal grandparent
-KIN:053,isPaternalGrandparentOf,skos:exactMatch,PGRPRN,paternal grandparent
-KIN:036,isGrandchildOf,skos:exactMatch,GRNDCHILD,grandchild
-KIN:047,isGreatGrandchildOf,skos:broadMatch,GRNDCHILD,grandchild
+KIN:201,isBiologicalParentalSiblingOf,skos:narrowMatch,AUNT,aunt
+KIN:201,isBiologicalParentalSiblingOf,skos:narrowMatch,UNCLE,uncle
+KIN:013,isSocialLegalParentalSiblingOf,skos:narrowMatch,AUNT,aunt
+KIN:013,isSocialLegalParentalSiblingOf,skos:narrowMatch,UNCLE,uncle
+KIN:204,isBiologicalCousinOf,skos:exactMatch,COUSN,cousin
+KIN:205,isBiologicalMaternalCousinOf,skos:exactMatch,MCOUSN,maternal cousin
+KIN:206,isBiologicalPaternalCousinOf,skos:exactMatch,PCOUSN,paternal cousin
+KIN:014,isSocialLegalCousinOf,skos:broadMatch,COUSN,cousin
+KIN:015,isSocialLegalMaternalCousinOf,skos:broadMatch,MCOUSN,maternal cousin
+KIN:016,isSocialLegalPaternalCousinOf,skos:broadMatch,PCOUSN,paternal cousin
+KIN:207,isBiologicalGrandparentOf,skos:closeMatch,GRPRN,grandparent
+KIN:210,isBiologicalGreatGrandparentOf,skos:closeMatch,GGRPRN,great grandparent
+KIN:208,isBiologicalMaternalGrandparentOf,skos:exactMatch,MGRPRN,maternal grandparent
+KIN:209,isBiologicalPaternalGrandparentOf,skos:exactMatch,PGRPRN,paternal grandparent
+KIN:017,isSocialLegalGrandparentOf,skos:closeMatch,GRPRN,grandparent
+KIN:018,isSocialLegalGreatGrandparentOf,skos:closeMatch,GGRPRN,great grandparent
+KIN:052,isSocialLegalMaternalGrandparentOf,skos:closeMatch,MGRPRN,maternal grandparent
+KIN:053,isSocialLegalPaternalGrandparentOf,skos:closeMatch,PGRPRN,paternal grandparent
+KIN:036,isBiologicalGrandchildOf,skos:exactMatch,GRNDCHILD,grandchild
+KIN:047,isBiologicalGreatGrandchildOf,skos:broadMatch,GRNDCHILD,grandchild
 KIN:026,isPartnerOf,skos:closeMatch,DOMPART,domestic partner
 KIN:026,isPartnerOf,skos:closeMatch,SPS,spouse
 KIN:026,isPartnerOf,skos:closeMatch,SIGOTHR,significant other
 KIN:021,isFosterParentOf,skos:exactMatch,PRNFOST,foster parent
 KIN:022,isAdoptiveParentOf,skos:exactMatch,ADOPTP,adoptive parent
 KIN:023,isStepParentOf,skos:exactMatch,STPPRN,step parent
-KIN:027,isBiologicalMotherOf,skos:closeMatch,NMTH,natural mother 
+KIN:027,isBiologicalMotherOf,skos:closeMatch,NMTH,natural mother
 KIN:028,isBiologicalFatherOf,skos:closeMatch,NFTH,natural father
+KIN:200,isBiologicalParentOf,skos:closeMatch,NPRN,natural parent
 KIN:004,isSpermDonorOf,skos:broadMatch,NFTH,natural father
 KIN:038,isOvumDonorOf,skos:broadMatch,NMTH,natural mother
 KIN:005,isGestationalCarrierOf,skos:closeMatch,GESTM,gestational mother
 KIN:001,isRelativeOf,skos:broadMatch,FAMMEMB,family member
 KIN:002,isBiologicalRelativeOf,skos:broadMatch,FAMMEMB,family member
 KIN:019,isSocialLegalRelativeOf,skos:broadMatch,FAMMEMB,family member
-KIN:003,isBiologicalParentOf,skos:closeMatch,NPRN,natural parent
 KIN:020,isParentFigureOf,skos:closeMatch,PRN,parent
 KIN:006,isSurrogateOvumDonorOf,skos:broadMatch,NMTH,natural mother
 KIN:019,isSocialLegalRelativeOf,skos:narrowMatch,CHLDADOPT,adopted child
@@ -67,23 +70,23 @@ KIN:021,isFosterParentOf,skos:narrowMatch,MTHFOST,foster mother
 KIN:019,isSocialLegalRelativeOf,skos:narrowMatch,SONFOST,foster son
 KIN:009,isMultipleBirthSiblingOf,skos:narrowMatch,FTWINBRO,fraternal twin brother
 KIN:009,isMultipleBirthSiblingOf,skos:narrowMatch,FTWINSIS,fraternal twin sister
-KIN:036,isGrandchildOf,skos:narrowMatch,GRNDDAU,granddaughter
-KIN:017,isGrandparentOf,skos:narrowMatch,GRFTH,grandfather
-KIN:017,isGrandparentOf,skos:narrowMatch,GRMTH,grandmother
-KIN:036,isGrandchildOf,skos:narrowMatch,GRNDSON,grandson
-KIN:018,isGreatGrandparentOf,skos:narrowMatch,GGRFTH,great grandfather
-KIN:018,isGreatGrandparentOf,skos:narrowMatch,GGRMTH,great grandmother
+KIN:036,isBiologicalGrandchildOf,skos:narrowMatch,GRNDDAU,granddaughter
+KIN:207,isBiologicalGrandparentOf,skos:narrowMatch,GRFTH,grandfather
+KIN:207,isBiologicalGrandparentOf,skos:narrowMatch,GRMTH,grandmother
+KIN:036,isBiologicalGrandchildOf,skos:narrowMatch,GRNDSON,grandson
+KIN:210,isBiologicalGreatGrandparentOf,skos:narrowMatch,GGRFTH,great grandfather
+KIN:210,isBiologicalGreatGrandparentOf,skos:narrowMatch,GGRMTH,great grandmother
 KIN:012,isHalfSiblingOf,skos:narrowMatch,HBRO,half-brother
 KIN:012,isHalfSiblingOf,skos:narrowMatch,HSIS,half-sister
 KIN:026,isPartnerOf,skos:narrowMatch,HUSB,husband
 KIN:009,isMultipleBirthSiblingOf,skos:narrowMatch,ITWINBRO,identical twin brother
 KIN:009,isMultipleBirthSiblingOf,skos:narrowMatch,ITWINSIS,identical twin sister
 KIN:019,isSocialLegalRelativeOf,skos:narrowMatch,INLAW,inlaw
-KIN:017,isGrandparentOf,skos:narrowMatch,MGRFTH,maternal grandfather
-KIN:017,isGrandparentOf,skos:narrowMatch,MGRMTH,maternal grandmother
-KIN:018,isGreatGrandparentOf,skos:narrowMatch,MGGRFTH,maternal great-grandfather
-KIN:018,isGreatGrandparentOf,skos:narrowMatch,MGGRMTH,maternal great-grandmother
-KIN:018,isGreatGrandparentOf,skos:narrowMatch,MGGRPRN,maternal great-grandparent
+KIN:017,isSocialLegalGrandparentOf,skos:narrowMatch,MGRFTH,maternal grandfather
+KIN:017,isSocialLegalGrandparentOf,skos:narrowMatch,MGRMTH,maternal grandmother
+KIN:018,isSocialLegalGreatGrandparentOf,skos:narrowMatch,MGGRFTH,maternal great-grandfather
+KIN:018,isSocialLegalGreatGrandparentOf,skos:narrowMatch,MGGRMTH,maternal great-grandmother
+KIN:018,isSocialLegalGreatGrandparentOf,skos:narrowMatch,MGGRPRN,maternal great-grandparent
 KIN:001,isRelativeOf,skos:narrowMatch,MTH,mother
 KIN:019,isSocialLegalRelativeOf,skos:narrowMatch,MTHINLAW,mother-in-law
 KIN:019,isSocialLegalRelativeOf,skos:narrowMatch,MTHINLOAW,mother-in-law
@@ -98,11 +101,11 @@ KIN:001,isRelativeOf,skos:narrowMatch,NEPHEW,nephew
 KIN:001,isRelativeOf,skos:narrowMatch,NIECE,niece
 KIN:001,isRelativeOf,skos:narrowMatch,NIENEPH,niece/nephew
 KIN:019,isSocialLegalRelativeOf,skos:narrowMatch,PRNINLAW,parent in-law
-KIN:017,isGrandparentOf,skos:narrowMatch,PGRFTH,paternal grandfather
-KIN:017,isGrandparentOf,skos:narrowMatch,PGRMTH,paternal grandmother
-KIN:018,isGreatGrandparentOf,skos:narrowMatch,PGGRFTH,paternal great-grandfather
-KIN:018,isGreatGrandparentOf,skos:narrowMatch,PGGRMTH,paternal great-grandmother
-KIN:018,isGreatGrandparentOf,skos:narrowMatch,PGGRPRN,paternal great-grandparent
+KIN:017,isSocialLegalGrandparentOf,skos:narrowMatch,PGRFTH,paternal grandfather
+KIN:017,isSocialLegalGrandparentOf,skos:narrowMatch,PGRMTH,paternal grandmother
+KIN:018,isSocialLegalGreatGrandparentOf,skos:narrowMatch,PGGRFTH,paternal great-grandfather
+KIN:018,isSocialLegalGreatGrandparentOf,skos:narrowMatch,PGGRMTH,paternal great-grandmother
+KIN:018,isSocialLegalGreatGrandparentOf,skos:narrowMatch,PGGRPRN,paternal great-grandparent
 KIN:019,isSocialLegalRelativeOf,skos:narrowMatch,SIBINLAW,sibling in-law
 KIN:024,isSiblingFigureOf,skos:narrowMatch,SIS,sister
 KIN:019,isSocialLegalRelativeOf,skos:narrowMatch,SISINLAW,sister-in-law
