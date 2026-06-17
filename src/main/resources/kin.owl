@@ -82,6 +82,10 @@ Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_211>))
 Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_212>))
 Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_213>))
 Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_214>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_215>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_216>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_217>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_218>))
 
 # Deprecated properties (retained for backwards compatibility)
 Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_003>))
@@ -246,7 +250,13 @@ SymmetricObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_055>)
 AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_201> "isBiologicalParentalSiblingOf"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_201> "A relation that indicates that a person is the biological sibling of a biological parent (egg or sperm) of another person (e.g. Biological Aunt or Uncle)."@en)
 SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_201> <http://purl.org/ga4gh/kin.owl#KIN_002>)
-InverseObjectProperties(<http://purl.org/ga4gh/kin.owl#KIN_201> <http://purl.org/ga4gh/kin.owl#KIN_201>)
+InverseObjectProperties(<http://purl.org/ga4gh/kin.owl#KIN_201> <http://purl.org/ga4gh/kin.owl#KIN_215>)
+
+# Object Property: KIN_215 (isBiologicalNiblingOf)  [inverse of KIN_201]
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_215> "isBiologicalNiblingOf"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_215> "A relation that indicates that a person is the biological child of a biological sibling of another person's biological parent (e.g. Biological Niece or Nephew)."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_215> <http://purl.org/ga4gh/kin.owl#KIN_002>)
 
 # Object Property: KIN_202 (isBiologicalMaternalParentalSiblingOf)
 
@@ -409,6 +419,7 @@ AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_013> "isSocial
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://purl.org/ga4gh/kin.owl#KIN_013> "isParentalSiblingOf"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_013> "A relation that indicates that a person is the socio-legal sibling of a socio-legal parent of another person (e.g. Socio-Legal Aunt or Uncle)."@en)
 SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_013> <http://purl.org/ga4gh/kin.owl#KIN_019>)
+InverseObjectProperties(<http://purl.org/ga4gh/kin.owl#KIN_013> <http://purl.org/ga4gh/kin.owl#KIN_216>)
 
 # Object Property: KIN_213 (isSocialLegalMaternalParentalSiblingOf)
 
@@ -421,6 +432,12 @@ SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_213> <http://purl.org/ga4
 AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_214> "isSocialLegalPaternalParentalSiblingOf"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_214> "A relation that indicates that a person is the socio-legal sibling of a socio-legal father of another person (e.g. Socio-Legal Paternal Aunt or Uncle)."@en)
 SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_214> <http://purl.org/ga4gh/kin.owl#KIN_013>)
+
+# Object Property: KIN_216 (isSocialLegalNiblingOf)  [inverse of KIN_013]
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_216> "isSocialLegalNiblingOf"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_216> "A relation that indicates that a person is the socio-legal child of a socio-legal sibling of another person's socio-legal parent (e.g. Socio-Legal Niece or Nephew)."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_216> <http://purl.org/ga4gh/kin.owl#KIN_019>)
 
 # Object Property: KIN_014 (isSocialLegalCousinOf)  [renamed from isCousinOf; moved to social hierarchy]
 
@@ -452,6 +469,7 @@ AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_017> "isSocial
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://purl.org/ga4gh/kin.owl#KIN_017> "isGrandparentOf"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_017> "A relation between a person and a child of that person's child."@en)
 SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_017> <http://purl.org/ga4gh/kin.owl#KIN_019>)
+InverseObjectProperties(<http://purl.org/ga4gh/kin.owl#KIN_017> <http://purl.org/ga4gh/kin.owl#KIN_217>)
 
 # Object Property: KIN_052 (isSocialLegalMaternalGrandparentOf)  [renamed from isMaternalGrandparentOf]
 
@@ -467,12 +485,25 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://purl.
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_053> "A relation between a person and a child of that person's son."@en)
 SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_053> <http://purl.org/ga4gh/kin.owl#KIN_017>)
 
+# Object Property: KIN_217 (isSocialLegalGrandchildOf)  [inverse of KIN_017]
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_217> "isSocialLegalGrandchildOf"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_217> "A relation between a person and a socio-legal parent of that person's socio-legal parent."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_217> <http://purl.org/ga4gh/kin.owl#KIN_019>)
+
 # Object Property: KIN_018 (isSocialLegalGreatGrandparentOf)  [renamed from isGreatGrandparentOf; moved to social hierarchy]
 
 AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_018> "isSocialLegalGreatGrandparentOf"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <http://purl.org/ga4gh/kin.owl#KIN_018> "isGreatGrandparentOf"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_018> "A relation between a person and a child of that person's grandchild."@en)
 SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_018> <http://purl.org/ga4gh/kin.owl#KIN_019>)
+InverseObjectProperties(<http://purl.org/ga4gh/kin.owl#KIN_018> <http://purl.org/ga4gh/kin.owl#KIN_218>)
+
+# Object Property: KIN_218 (isSocialLegalGreatGrandchildOf)  [inverse of KIN_018]
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_218> "isSocialLegalGreatGrandchildOf"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_218> "A relation between a person and a socio-legal grandparent of that person's socio-legal parent."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_218> <http://purl.org/ga4gh/kin.owl#KIN_019>)
 
 
 ############################
