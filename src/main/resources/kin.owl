@@ -86,6 +86,9 @@ Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_215>))
 Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_216>))
 Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_217>))
 Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_218>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_219>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_220>))
+Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_221>))
 
 # Deprecated properties (retained for backwards compatibility)
 Declaration(ObjectProperty(<http://purl.org/ga4gh/kin.owl#KIN_003>))
@@ -361,18 +364,39 @@ SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_020> <http://purl.org/ga4
 AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_021> "isFosterParentOf"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_021> "A relation between a person and a child that temporarily enters into his or her family for a period of time, without becoming the child's legal parent."@en)
 SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_021> <http://purl.org/ga4gh/kin.owl#KIN_020>)
+InverseObjectProperties(<http://purl.org/ga4gh/kin.owl#KIN_021> <http://purl.org/ga4gh/kin.owl#KIN_220>)
 
 # Object Property: KIN_022 (isAdoptiveParentOf)
 
 AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_022> "isAdoptiveParentOf"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_022> "A legal relation between a person and a child that is adopted by that person. The adopted child is given the rights, privileges, and duties of a biological child by the adoptive person."@en)
 SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_022> <http://purl.org/ga4gh/kin.owl#KIN_020>)
+InverseObjectProperties(<http://purl.org/ga4gh/kin.owl#KIN_022> <http://purl.org/ga4gh/kin.owl#KIN_219>)
 
 # Object Property: KIN_023 (isStepParentOf)
 
 AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_023> "isStepParentOf"@en)
 AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_023> "A relation between a person and a child, where the person is married to the father or mother of a child but who is not that child's own father or mother."@en)
 SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_023> <http://purl.org/ga4gh/kin.owl#KIN_020>)
+InverseObjectProperties(<http://purl.org/ga4gh/kin.owl#KIN_023> <http://purl.org/ga4gh/kin.owl#KIN_221>)
+
+# Object Property: KIN_219 (isAdoptedChildOf)  [inverse of KIN_022]
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_219> "isAdoptedChildOf"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_219> "A legal relation between a person and an individual who has legally adopted that person. The adopted person has been given the rights, privileges, and duties of a biological child by the adoptive individual."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_219> <http://purl.org/ga4gh/kin.owl#KIN_019>)
+
+# Object Property: KIN_220 (isFosterChildOf)  [inverse of KIN_021]
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_220> "isFosterChildOf"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_220> "A relation between a person and an individual who has temporarily fostered that person, without becoming the person's legal parent."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_220> <http://purl.org/ga4gh/kin.owl#KIN_019>)
+
+# Object Property: KIN_221 (isStepChildOf)  [inverse of KIN_023]
+
+AnnotationAssertion(rdfs:label <http://purl.org/ga4gh/kin.owl#KIN_221> "isStepChildOf"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://purl.org/ga4gh/kin.owl#KIN_221> "A relation between a person and the partner of that person's biological or adoptive parent, where the partner is not that person's own biological or adoptive parent."@en)
+SubObjectPropertyOf(<http://purl.org/ga4gh/kin.owl#KIN_221> <http://purl.org/ga4gh/kin.owl#KIN_019>)
 
 # Object Property: KIN_024 (isSiblingFigureOf)
 
